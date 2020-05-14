@@ -1,0 +1,53 @@
+body {
+    margin: 0vw;
+    padding: 0vw;
+    background-color: rgb(46, 46, 82);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuderoulant {
+    padding: 1.5vw;
+    text-align: center;
+}
+
+.menuchoix {
+    height: 5vh;
+    width: 20vw;
+    border-radius: 10px;
+    border: solid 3px wheat;
+    text-align: center;
+}
+
+.affichagePerso {
+    display: flex;
+    text-align: center;
+}
+
+img {
+    flex: 2;
+    padding: 2vw;
+}
+
+.description {
+    flex: 2;
+    color: wheat;
+}
+
+.btn3 {
+    padding: 1vw;
+    text-align: center;
+}
+
+.btn {
+   text-decoration: none; 
+   border: 3px solid wheat; 
+   border-radius: 20px;
+   padding: 1vw;
+   background-color: whitesmoke;
+   color: darkblue;
+   margin: 5vw;
+}
