@@ -2,8 +2,8 @@
 #        Script MySQL.
 #------------------------------------------------------------
 
-CREATE DATABASE IF NOT EXISTS 'JEUMLY' DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE 'JEUMLY';
+CREATE DATABASE IF NOT EXISTS `JEUMLY` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `JEUMLY`;
 
 #------------------------------------------------------------
 # Table: Personnages
@@ -55,6 +55,6 @@ CREATE TABLE Scores(
         scoreObtenu      Int NOT NULL
 )ENGINE=InnoDB;
 
-ALTER TABLE Users ADD CONSTRAINT Users_Personnages_FK FOREIGN KEY (idPersonnage) REFERENCES Personnages(idPersonnage),
-ALTER TABLE Scores ADD CONSTRAINT Scores_Niveaux_FK FOREIGN KEY (idNiveau) REFERENCES Niveaux(idNiveau),
+ALTER TABLE Users ADD CONSTRAINT Users_Personnages_FK FOREIGN KEY (idPersonnage) REFERENCES Personnages(idPersonnage);
+ALTER TABLE Scores ADD CONSTRAINT Scores_Niveaux_FK FOREIGN KEY (idNiveau) REFERENCES Niveaux(idNiveau);
 ALTER TABLE Scores ADD CONSTRAINT Scores_Users_FK FOREIGN KEY (idUser) REFERENCES Users(idUser);
