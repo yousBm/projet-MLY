@@ -1,0 +1,73 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.marge{
+    margin-left: 20vw;
+    margin-top: 5vw;
+}
+.borderBlue{
+    border: 2px solid rgb(44, 94, 187);
+}
+.borderRadius{
+    border-radius: 10px;
+}
+.margeBoutonTop{
+    margin-top: 5vh;
+}
+/*************************************************couleur*/
+body{
+    background-color: #2D2F50;
+}
+.ligne{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.ligne:nth-child(odd){
+    background-color: rgba(126, 125, 125, 0.5);
+}
+
+.fond{
+    background-color: rgb(44, 94, 187);
+}
+.ecritureBlanche{
+    color: white;
+}
+/********************************************contenu page*/
+.case{
+    width: 12vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab{
+    width: 60vw;
+    box-shadow: 2px 2px 2px black;
+}
+.boutonRetour{
+    width: 10vw;
+    height: 4vh;
+    background-color: rgb(44, 94, 187);
+    align-items: center;
+    box-shadow: 2px 2px 2px black;
+}
+.boutonRetour:hover{
+    background-color: rgb(35, 149, 255);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
