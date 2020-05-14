@@ -28,7 +28,7 @@ $db = DbConnect::getDb();
 $db->exec("DELETE FROM users WHERE idUser=" . $obj->getIdUser());
 }
 
-public static function findById($id)
+public static function getById($id)
 {
 $db = DbConnect::getDb();
 $id = (int) $id;

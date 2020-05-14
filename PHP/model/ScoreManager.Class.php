@@ -34,7 +34,7 @@ $db = DbConnect::getDb();
 $db->exec("DELETE FROM scores WHERE idScore=" . $obj->getIdScore());
 }
 
-public static function findById($id)
+public static function getById($id)
 {
 $db = DbConnect::getDb();
 $id = (int) $id;
@@ -59,5 +59,27 @@ $scores[] = new Score($donnees);
 }
 return $scores;
  }
+
+ static public function getByNiveau($niveau) {
+    $db = DbConnect::getDb (); // Instance de PDO.
+    // Exécute une requête de type SELECT avec une clause WHERE, et retourne un objet Personne
+    $q = $db->prepare ( 'SELECT idScore, idNiveau, idUser, nbDePieceRecolte, Bonus, time, scoreObtenu  FROM Scores WHERE idNiveau = :idNiveau' );
+    
+    // Assignation des valeurs .
+    $q->bindValue ( ':idNiveau', $niveau );
+    $q->execute ();
+    $donnees = $q->fetch ( PDO::FETCH_ASSOC );
+    $q->CloseCursor ();
+    if ($donnees == false) { // Si l'utilisateur n'existe pas, on renvoi un objet vide
+        return new Score ();
+    } else {
+        return new Score ( $donnees );
+    }
+}
+
+public static function calculScore() 
+{
+    
+}
 
 }

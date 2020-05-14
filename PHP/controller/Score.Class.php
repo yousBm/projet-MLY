@@ -94,4 +94,28 @@ public function toString()
  return $this->getIdScore() . $this->getIdNiveau() . $this->getIdUser() . $this->getNbDePieceRecolte() . $this->getBonus() . $this->getTime() . $this->getScoreObtenu() ;
 }
 
+public static function compareTo($obj1, $obj2)
+    {
+        if ($obj1->getScoreObtenu() > $obj2->getScoreObtenu())
+        {
+            return 1;
+        }
+        elseif ($obj1->getScoreObtenu() < $obj2->getScoreObtenu())
+        {
+            return -1;
+        }
+        elseif ($obj1->getTime() > $obj2->getTime())
+        {
+            return 1;
+        }
+        elseif ($obj1->getTime() < $obj2->getTime())
+        {
+            return -1;
+        }
+        else
+        {
+            return 0;
+        }
+    } 
+
 }
