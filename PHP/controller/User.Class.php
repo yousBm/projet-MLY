@@ -6,6 +6,7 @@ private $_idUser;
 private $_pseudo;
 private $_motDePasse;
 private $_idPersonnage;
+private $_personnage;
 
 /******************************Accesseurs*******************************/
 public function getIdUser()
@@ -32,6 +33,15 @@ public function setMotDePasse($_motDePasse)
 {
  return $this->_motDePasse = $_motDePasse;
 }
+public function getPersonnage()
+{
+return $this->_personnage;
+}
+
+public function setPersonnage($_personnage)
+{
+$this->_personnage = $_personnage;
+}
 public function getIdPersonnage()
 {
  return $this->_idPersonnage;
@@ -39,6 +49,7 @@ public function getIdPersonnage()
 public function setIdPersonnage($_idPersonnage)
 {
  return $this->_idPersonnage = $_idPersonnage;
+ $this->setPersonnage(PersonnageManager::getById($_idPersonnage));
 }
 
 /*******************************Construct*******************************/
@@ -64,7 +75,9 @@ public function __construct(array $options = [])
 /****************************Autres méthodes****************************/
 public function toString() 
 { 
- return $this->getIdUser() . $this->getPseudo() . $this->getMotDePasse() . $this->getIdPersonnage() ;
+ return $this->getPseudo() ."\n". $this->getMotDePasse() . $this->getPersonnage()->getNomPersonnage();
 }
+
+
 
 }

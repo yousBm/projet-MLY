@@ -28,10 +28,10 @@ $q->bindValue(":idScore", $obj->getIdScore());
  $q->execute();
 }
 
-public static function delete(Score $obj)
+public static function delete($id)
 {
 $db = DbConnect::getDb();
-$db->exec("DELETE FROM scores WHERE idScore=" . $obj->getIdScore());
+$db->exec("DELETE FROM scores WHERE idScore=$id");
 }
 
 public static function getById($id)

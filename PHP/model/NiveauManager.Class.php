@@ -20,10 +20,10 @@ $q->bindValue(":idNiveau", $obj->getIdNiveau());
  $q->execute();
 }
 
-public static function delete(Niveau $obj)
+public static function delete($id)
 {
 $db = DbConnect::getDb();
-$db->exec("DELETE FROM niveaux WHERE idNiveau=" . $obj->getIdNiveau());
+$db->exec("DELETE FROM niveaux WHERE idNiveau=$id");
 }
 
 public static function getById($id)

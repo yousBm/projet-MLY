@@ -22,10 +22,10 @@ $q->bindValue(":idPersonnage", $obj->getIdPersonnage());
  $q->execute();
 }
 
-public static function delete(Personnage $obj)
+public static function delete($id)
 {
 $db = DbConnect::getDb();
-$db->exec("DELETE FROM personnages WHERE idPersonnage=" . $obj->getIdPersonnage());
+$db->exec("DELETE FROM personnages WHERE idPersonnage= $id");
 }
 
 public static function getById($id)

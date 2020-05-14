@@ -64,7 +64,7 @@ public function __construct(array $options = [])
 /****************************Autres méthodes****************************/
 public function toString() 
 { 
- return $this->getIdPersonnage() . $this->getNomPersonnage() . $this->getDescriptionPersonnage() . $this->getAvatar() ;
+ return $this->getIdPersonnage() ."\n". $this->getNomPersonnage()."\n" . $this->getDescriptionPersonnage() ."\n". $this->getAvatar() ;
 }
 
 }
