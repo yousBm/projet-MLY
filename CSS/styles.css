@@ -18,7 +18,7 @@ body {
 }
 
 .menuderoulant {
-    padding: 1.5vw;
+    padding: 1vw;
     text-align: center;
 }
 
@@ -35,10 +35,11 @@ body {
     text-align: center;
 }
 
-img {
+#img {
     flex: 2;
     padding: 2vw;
-    width: 10%;
+    width: 5px;
+    margin-left: 5vw;
 }
 
 .description {
@@ -59,17 +60,11 @@ img {
     background-color: whitesmoke;
     color: darkblue;
     margin: 5vw;
+    margin-bottom: 5vh;
 }
 
 /*************  Connexion ****************/
-/* body.body.co {
-    padding: 0;
-    margin: 0;
-    background-color:skyblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
+
 
 .header-co {
     display: flex;
@@ -196,6 +191,10 @@ cursor: pointer;
 .lien-a:hover{
     color: #17C3B2;
     transform: scale(0.9);
+}
+
+.dessusFooter {
+    margin-bottom: 20vh;
 }
 
 footer {
