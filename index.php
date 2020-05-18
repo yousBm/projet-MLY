@@ -41,7 +41,7 @@ if (isset($_GET['action'])) {
                 afficherPage('PHP/view/', 'formDeconnection', "Deconnection");
                 break;
             }
-        case 'menuListe': {
+        case 'MenuListe': {
                 afficherPage('PHP/view/', 'menuListe', "Menu du jeu");
                 break;
             }
@@ -51,5 +51,5 @@ if (isset($_GET['action'])) {
             }
     }
 } else { // Sinon, on affiche la page principale du site
-    afficherPage('PHP/view/', 'menuListe', "Connection");
+    afficherPage('PHP/view/', 'formConnection', "Connection");
 }

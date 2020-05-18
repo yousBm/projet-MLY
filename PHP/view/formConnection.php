@@ -2,7 +2,7 @@
 
 if (!isset($_POST['pseudo'])) // On est dans la page de formulaire
 {
-    require 'Php/View/HtmlConnection.php'; // On affiche le formulaire
+    require 'Php/View/htmlConnection.php'; // On affiche le formulaire
 }
 else
 { // Le formulaire a été validé
@@ -15,7 +15,7 @@ else
     }
 else // On check le mot de passe
     {
-        $utilisateur = UserManager::get($_POST['pseudo']); // On recherche dans la base l'utilisateur et on rempli l'objet user
+        $utilisateur = UserManager::getByPseudo($_POST['pseudo']); // On recherche dans la base l'utilisateur et on rempli l'objet user
 
         if ($utilisateur->getMotDePasse() == md5($_POST['motDePasse'])) // Acces OK !
         {

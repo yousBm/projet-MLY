@@ -1,11 +1,3 @@
-<header class="header-co">
-    <div class="logo">
-        <img src="../Images/logoMLY.png" alt="Logo"></div>
-    <div id="title"><?php echo $titre ?></div>
-    <div class="esp"></div>
-
-</header>
-
 <div class="content">
     <form class="connect-form" action="index.php?action=connect" method="post">
 
@@ -19,7 +11,7 @@
 
             <div class="contenu">
                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-                <input class="input-co" type="password" name="motDePasse" id="motDePasse" maxlength="30" placeholder="Entrez votre mot de passe" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,15})" required>
+                <input class="input-co" type="password" name="motDePasse" id="motDePasse" maxlength="30" placeholder="Entrez votre mot de passe" pattern="" required>
                 <i class="fa fa-eye" aria-hidden="true"></i>
             </div>
         </div>
@@ -27,7 +19,7 @@
 
         <div class="centrer">
             <input class="bouton centrer" type="submit" value="Valider" />
-            <a class="lien-a" href="inscription.html">Pas encore inscrit ?</a>
+            <a class="lien-a" href="index.php?action=nouveauUser">Pas encore inscrit ?</a>
         </div>
 
     </form>
