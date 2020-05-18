@@ -22,7 +22,7 @@ else // On check le mot de passe
             $_SESSION['pseudo'] = $utilisateur->getPseudo();
             $_SESSION['id'] = $utilisateur->getIdUser();
             $message = '<p>Bienvenue ' . $utilisateur->getPseudo() . ', vous êtes maintenant connecté!</p>';
-            header("refresh:2,url=index.php?action=MenuListe");?>
+            header("refresh:2,url=index.php?action=menuListe");?>
 		<?php }
     else // Acces pas OK !
         {

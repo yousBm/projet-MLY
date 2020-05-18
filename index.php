@@ -41,7 +41,7 @@ if (isset($_GET['action'])) {
                 afficherPage('PHP/view/', 'formDeconnection', "Deconnection");
                 break;
             }
-        case 'MenuListe': {
+        case 'menuListe': {
                 afficherPage('PHP/view/', 'menuListe', "Menu du jeu");
                 break;
             }

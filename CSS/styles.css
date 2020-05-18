@@ -90,6 +90,9 @@ body {
 
 .esp {
     flex: 0.5;
+    align-self: center;
+    color:darkblue;
+    font-family: 'Roboto', sans-serif;
 }
 
 .content {

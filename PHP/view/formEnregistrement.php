@@ -51,7 +51,7 @@ else //On est dans le cas traitement
         //Et on définit les variables de sessions
         $_SESSION['pseudo'] = $nouvelUtilisateur->getPseudo();
         $_SESSION['id'] = $nouvelUtilisateur->getIdUser() ;
-        header("refresh:2,url=index.php?action=MenuListe");
+        header("refresh:2,url=index.php?action=menuListe");
     }
     else // on affiche les erreurs
     {
