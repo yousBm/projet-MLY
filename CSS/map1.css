@@ -1,0 +1,339 @@
+/*general*/
+html,
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/*couleur*/
+.gray{
+    background-color: gray;
+}
+.grayMenu{
+    background-color: rgb(80, 78, 78);
+}
+.black{
+    background-color: black;
+}
+/*mise en page*/
+.border{
+    border: 3px black solid;
+}
+/*header************************************************************************************************/
+/*menuJeu************************************************************************************************/
+.menuJeu{
+    width: 100vw;
+    height: 11vh;
+    position: fixed;
+    top: 89vh; 
+    background-image: url("../Images/decor/menu.png");
+    background-size: cover;
+}
+/********************************************************************* Joueur */
+#playerMap1 {
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    width: 3vw;
+    height: 6vh;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    box-shadow: black 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+}
+.persoChercheurDor{
+    background-image: url(../Images/decor/skinChercheurDor.png);
+    background-size: contain;
+    background-position:  center;
+    border-radius: 20px;
+    box-shadow: black 2px 2px 2px;
+}
+/*terrain*/
+.terrainMap1{
+    width: 100vw;
+    height: 88vh;
+    background-image: url("../Images/decor/terrain.png");
+}
+/*Obstacles*/
+.obstacle {
+    position: absolute;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+/*zone*/
+.line01{
+    top: 0vh;
+    left: 0vw;
+    width: 1vw; 
+    height: 88vh;
+}
+.line02{
+    top: 86vh;
+    left: 0vw;
+    width: 100vw; 
+    height: 3vh;
+}
+.line03{
+    top: 0vh;
+    left: 99vw;
+    width: 1vw; 
+    height: 88vh;
+}
+.line04{
+    top: 0vh;
+    left: 0vw;
+    width: 100vw; 
+    height: 6vh;
+}
+/*lines*/
+.line05{
+    left: 17vw;
+    width: 10vw;
+    top: 25vh;
+    height: 6vh;
+}
+.line06{
+    top: 0vw;
+    left: 26vw;
+    width: 1vw;
+    height: 50vh;
+}
+.line07{
+    top: 65vh;
+    left: 0vw;
+    width: 27vw;
+    height: 6vh;
+}
+.line08{
+    top: 25vh;
+    left: 50vw;
+    width: 1vw;
+    height: 62vh;
+}
+.line09{
+    top: 25vh;
+    left: 41vw;
+    width: 10vw;
+    height: 6vh;
+}
+.line10{
+    top: 25vh;
+    left: 26vw;
+    width: 7vw;
+    height: 6vh;
+}
+.line11{
+    top: 65vh;
+    left: 37vw;
+    width: 27vw;
+    height: 6vh;
+}
+.line12{
+    top: 25vh;
+    left: 63vw;
+    width: 1vw;
+    height: 42vh;
+}
+.line13{
+    top: 25vh;
+    left: 63vw;
+    width: 10vw;
+    height: 6vh;
+}
+.line14{
+    top: 25vh;
+    left: 83vw;
+    width: 17vw;
+    height: 6vh;
+}
+.line15{
+    top: 65vh;
+    left: 74vw;
+    width: 26vw;
+    height: 6vh;
+}
+.line16{
+    top: 25vh;
+    left: 83vw;
+    width: 1vw;
+    height: 25vh;
+}
+.line17{
+    top: 6vh;
+    left: 26vw;
+    width: 5vw;
+    height: 7.5vh;
+}
+.line18{
+    top: 78vh;
+    left: 0vw;
+    width: 5vw;
+    height: 9vh;
+}
+.line19{
+    top: 70vh;
+    left: 95vw;
+    width: 4vw;
+    height: 7.5vh;
+}
+/*deco**********************************************************************/
+.marron{
+    background-color: rgb(114, 70, 12);
+}
+/*mur*/
+.mur{
+    position: absolute;
+}
+#mur01{
+    top: 1.5vh;
+    left: 1vw;
+    width: 25vw;
+    height: 4vh;
+}
+#mur02{
+    top: 1.5vh;
+    left: 27vw;
+    width: 25vw;
+    height: 4vh;
+}
+#mur03{
+    top: 1.5vh;
+    left: 52vw;
+    width: 25vw;
+    height: 4vh;
+}
+#mur04{
+    top: 1.5vh;
+    left: 73vw;
+    width: 26vw;
+    height: 4vh;
+}
+#mur05{
+    top: 26.5vh;
+    left: 27vw;
+    width: 5.5vw;
+    height: 4vh;
+}
+#mur06{
+    top: 26.5vh;
+    left: 17.5vw;
+    width: 8.5vw;
+    height: 4vh;
+}
+#mur07{
+    top: 66.5vh;
+    left: 1vw;
+    width: 25.4vw;
+    height: 4vh;
+}
+#mur08{
+    top: 66.5vh;
+    left: 74.3vw;
+    width: 24.4vw;
+    height: 4vh;
+}
+#mur09{
+    top: 26.5vh;
+    left: 84vw;
+    width: 15.2vw;
+    height: 4vh;
+}
+#mur10{
+    top: 66.5vh;
+    left: 37.3vw;
+    width: 12.6vw;
+    height: 4vh;
+}
+#mur11{
+    top: 66.5vh;
+    left: 50.9vw;
+    width: 12.6vw;
+    height: 4vh;
+}
+#mur12{
+    top: 26.5vh;
+    left: 41.4vw;
+    width: 8.5vw;
+    height: 4vh;
+}
+#mur13{
+    top: 26.5vh;
+    left: 64vw;
+    width: 8.5vw;
+    height: 4vh;
+}
+#mur14{
+    top: 5vh;
+    left: 27vw;
+    width: 4vw;
+    height: 4vh;
+}
+#mur15{
+    top: 9vh;
+    left: 27vw;
+    width: 4vw;
+    height: 4vh;
+}
+#mur16{
+    top: 78vh;
+    left: 1vw;
+    width: 4vw;
+    height: 4vh;
+}
+#mur17{
+    top: 82vh;
+    left: 1vw;
+    width: 4vw;
+    height: 4vh;
+}
+/*monstre*/
+.blue{
+    box-shadow: 2px 2px 2px;
+}
+.monstre{
+    border-radius: 5px;
+}
+.monstre1{
+    top:10vh;
+    left: 55vw;
+    height: 6vh;
+    width: 3vw;
+}
+.monstre2{
+    top: 55vh;
+    left: 10vw;
+    height: 6vh;
+    width: 3vw;
+}
+.monstre3{
+    top: 75vh;
+    left: 55vw;
+    height: 6vh;
+    width: 3vw;
+}
+.monstre4{
+    top: 71.5vh;
+    left: 17vw;
+    height: 6vh;
+    width: 3vw;
+}
+.monstre5{
+    top: 33vh;
+    left: 87vw;
+    height: 6vh;
+    width: 3vw;
+}
+.monstre6{
+    top: 34vh;
+    left: 40vw;
+    height: 6vh;
+    width: 3vw;
+}
+/*pieces*/

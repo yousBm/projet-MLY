@@ -38,6 +38,7 @@ body {
 img {
     flex: 2;
     padding: 2vw;
+    width: 10%;
 }
 
 .description {

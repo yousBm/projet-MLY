@@ -58,7 +58,19 @@ $scores[] = new Score($donnees);
 }
 }
 return $scores;
- }
+}
+
+public function get10Meilleur(){
+$db = DbConnect::getDb();
+$scores = [];
+$q = $db->query("SELECT * FROM `scores` order by scoreObtenu desc , time asc limit 10");
+while ($donnees = $q->fetch(PDO::FETCH_ASSOC)) {
+if ($donnees != false) {
+$scores[] = new Score($donnees);
+}
+}
+return $scores;
+}
 
  static public function getByNiveau($niveau) {
     $db = DbConnect::getDb (); // Instance de PDO.
@@ -82,4 +94,3 @@ public static function calculScore()
     
 }
 
-}

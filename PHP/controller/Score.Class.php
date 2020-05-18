@@ -5,6 +5,7 @@ class Score
 private $_idScore;
 private $_idNiveau;
 private $_idUser;
+private $_user;
 private $_nbDePieceRecolte;
 private $_Bonus;
 private $_time;
@@ -33,7 +34,19 @@ public function getIdUser()
 }
 public function setIdUser($_idUser)
 {
- return $this->_idUser = $_idUser;
+ $this->_idUser = $_idUser;
+ $user=UserManager::getById($_idUser);
+ $this->setUser($user);
+}
+public function getUser()
+{
+return $this->_user;
+}
+public function setUser($_user)
+{
+$this->_user = $_user;
+
+return $this;
 }
 public function getNbDePieceRecolte()
 {
