@@ -1,21 +1,21 @@
 <?php
 function ChargerClasse($classe)
 {
-    if (file_exists("php/Controller/" . $classe . ".Class.php")) {
-        require "php/Controller/" . $classe . ".Class.php";
+    if (file_exists("PHP/controller/" . $classe . ".Class.php")) {
+        require "PHP/controller/" . $classe . ".Class.php";
     }
 
-    if (file_exists("php/Model/" . $classe . ".Class.php")) {
-        require "php/Model/" . $classe . ".Class.php";
+    if (file_exists("PHP/model/" . $classe . ".Class.php")) {
+        require "PHP/model/" . $classe . ".Class.php";
     }
 }
 spl_autoload_register("ChargerClasse");
 function afficherPage($chemin, $page, $titre)
 {
-    require  'php/View/Head.php';
-    require  'php/View/Header.php';
+    require  'PHP/view/head.php';
+    require  'PHP/view/header.php';
     require $chemin . $page . '.php';
-    require 'php/View/Footer.php';
+    require 'PHP/view/footer.php';
 }
 // on initialise les paramètres du fichier parametre.ini
 Parametre::init();
@@ -30,26 +30,26 @@ if (isset($_GET['action'])) {
     switch ($_GET['action']) {
 
         case 'nouveauUser': {
-                afficherPage('Php/View/', 'FormEnregistrement', "Nouvel Utilisateur");
+                afficherPage('PHP/view/', 'formEnregistrement', "Nouvel Utilisateur");
                 break;
             }
         case 'connect': {
-                afficherPage('Php/View/', 'FormConnection', "Connection");
+                afficherPage('PHP/view/', 'formConnection', "Connection");
                 break;
             }
         case 'deconnect': {
-                afficherPage('Php/View/', 'FormDeconnection', "Deconnection");
+                afficherPage('PHP/view/', 'formDeconnection', "Deconnection");
                 break;
             }
         case 'menuListe': {
-                afficherPage('Php/View/', 'menuListe', "Menu du jeu");
+                afficherPage('PHP/view/', 'menuListe', "Menu du jeu");
                 break;
             }
         case 'scoreListe': {
-                afficherPage('Php/View/', 'scoreListe', "Liste des 10 meilleurs scores");
+                afficherPage('PHP/view/', 'scoreListe', "Liste des 10 meilleurs scores");
                 break;
             }
     }
 } else { // Sinon, on affiche la page principale du site
-    afficherPage('Php/View/', 'menuListe', "Connection");
+    afficherPage('PHP/view/', 'menuListe', "Connection");
 }
