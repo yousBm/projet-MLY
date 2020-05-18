@@ -13,7 +13,22 @@
         </head>
         <body id="map1">
             <div class="terrainMap1">
-                <div id="playerMap1"></div>
+                <div id="playerMap1">
+                    <div class="hautPerso">
+                        <div class="orbite">
+                            <div class="oeil">
+                                <div id="gauche" class="pupille"></div>
+                            </div>
+                        </div>
+                        <div class="orbite">
+                            <div class="oeil">
+                                <div id="droite" class="pupille"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basPerso"></div>
+                    </div>
+                </div>
                 <div class="obstacles">
                     <div class="obstacle black line01">&nbsp;</div>
                     <div class="obstacle black line02">&nbsp;</div>
@@ -33,7 +48,7 @@
                     <div class="obstacle black line16">&nbsp;</div>
                     <div class="obstacle black line17">&nbsp;</div>
                     <div class="obstacle black line18">&nbsp;</div>
-                    <div id ="porte1" class="obstacle marron line19"><img src="../../Images/decor/porte.png" alt=""></div>
+                    <div id ="porte1Ferme" class="obstacle marron line19"><img src="../../Images/decor/porte.png" alt=""></div>
                 </div>
                 <div class="Ennemi">
                     <div class="obstacle blue monstre1"><img class="monstre" src="../../Images/decor/orcMarron.png" alt=""></div>
@@ -44,10 +59,10 @@
                     <div class="obstacle blue monstre6"><img class="monstre" src="../../Images/decor/armureFantome.png" alt=""></div>
                 </div>
                 <div class="pieces">
-                    <div id="piece1" class="obstacle or piece5"></div>
-                    <div id="piece2" class="obstacle or piece6"></div>
-                    <div id="piece3" class="obstacle or piece7"></div>
-                    <div id="piece4" class="obstacle or piece8"></div>
+                    <div id="piece1" class="obstacle or piece">PO</div>
+                    <div id="piece2" class="obstacle or piece">PO</div>
+                    <div id="piece3" class="obstacle or piece">PO</div>
+                    <div id="piece4" class="obstacle or piece">PO</div>
                 </div>
                 <div class="deco">
                     <div id="mur01" class="mur"><img src="../../Images/decor/murAbiméMousse.png" alt=""></div>
@@ -71,21 +86,26 @@
                     <div id="mur19" class="mur"><img src="" alt=""></div>
                     <div id="mur20" class="mur"><img src="" alt=""></div>
                 </div>
-                <div id="key1" class="obstacle key"></div>
+                <div id="key1" class="obstacle key"><img src="../../Images/decor/key.png" alt=""></div>
                 <div id="" class="obstacle porte1"><img src="" alt="" srcset=""></div>
                 <div class="menuJeu">
-                    <div class="nomPerso"></div>
+                    <div class="nomPerso">Joe l'edenté</div>
                     <div class="vie">
-                        <div class="batonVie"></div>
-                        <div class="batonVie"></div>
-                        <div class="batonVie"></div>
+                        <div class="coeur viePerso"><img src="../../Images/decor/coeur.png" alt=""></div>
+                        <div class="coeur viePerso"><img src="../../Images/decor/coeur.png" alt=""></div>
+                        <div class="coeur viePerso"><img src="../../Images/decor/coeur.png" alt=""></div>
+                        <div class="viePerso"><img src="" alt=""></div>
+                        <div class="viePerso"><img src="" alt=""></div>
+                        <div class="viePerso"><img src="" alt=""></div>
                     </div>
                     <div class="menuOr">
-                        <div class="pieceMenu or">PO</div>
+                        <div class="pieceMenu">
+                            <div class="piece">PO</div>
+                          </div>
                         <div id="nombrePiece" class="nombrePiece">0</div>
                     </div>
-                    <div class="keyMenu">
-                    </div>
+                    <div class="keyMenu" id="keyMenu"></div>
+                    <div class="time">00:00</div>
                 </div>
             </div>
             <script src="../../JS/jeu.js"></script>

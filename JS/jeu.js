@@ -71,12 +71,23 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
                 nombrePiece=parseInt(nombrePiece)+1;
                 document.getElementById("nombrePiece").innerHTML=nombrePiece;
             break;
-            case "porte1":
+            case "key1":
+                key1=document.getElementById("key1");
+                key1.setAttribute("class","invisible");
+                keyMenu=document.getElementById("keyMenu");
+                keyMenu.innerHTML="<img class='keyDansMenu' src='../../Images/decor/key.png' alt=''>";
+                porte1=document.getElementById("porte1Ferme");
+                porte1.setAttribute("id","porte1Ouverte");
+            break;
+            case "porte1Ferme":
+                alert("il me faut une clé!");
                 // si on touche l'arrivée
-                // document.location.href="index.php?act=map2";
             break;    
+            case "porte1Ouverte":
+                // si on touche l'arrivée
+                document.location.href="index.php?act=map2";
+            break; 
         }
-        // playSound("soundCollision", 1, false);
         return false;
     }
     return true;
@@ -89,18 +100,36 @@ document.addEventListener('keydown', function (event) {
     switch (keyCode) {
         case 37: // gauche(100)
             move(-speed, 0);
+            document.getElementById("gauche").style.left="-0.4vw";
+            document.getElementById("droite").style.left="-0.4vw";
+            document.getElementById("gauche").style.top="0.25vw";
+            document.getElementById("droite").style.top="0.25vw";
             break;
         case 38: // haut(104)
             move(0, -speed);
+            document.getElementById("gauche").style.left="0";
+            document.getElementById("droite").style.left="0";
+            document.getElementById("gauche").style.top="0";
+            document.getElementById("droite").style.top="0";
+            document.getElementsByClassName("blue")[0].style.left;
             break;
         case 39: // droite(102)
             move(speed, 0);
+            document.getElementById("gauche").style.left="0.4vw";
+            document.getElementById("droite").style.left="0.4vw";
+            document.getElementById("gauche").style.top="0.25vw";
+            document.getElementById("droite").style.top="0.25vw";
             break;
         case 40: // bas(98)
             move(0, speed)
-            break;            
+            document.getElementById("gauche").style.left="0";
+            document.getElementById("droite").style.left="0";
+            document.getElementById("gauche").style.top="0.4vw";
+            document.getElementById("droite").style.top="0.4vw";
+            document.getElementsByClassName("blue")[0].style.left;
+            break;       
 }
 });
 //========================================================================>
 player=document.getElementById("playerMap1");
-player.innerHTML="<img class='persoChercheurDor'>"
+player.setAttribute("class","persoChercheurDor");
