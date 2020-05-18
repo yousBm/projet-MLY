@@ -101,3 +101,6 @@ document.addEventListener('keydown', function (event) {
             break;            
 }
 });
+//========================================================================>
+player=document.getElementById("playerMap1");
+player.innerHTML="<img class='persoChercheurDor'>"
