@@ -22,13 +22,13 @@ else // On check le mot de passe
             $_SESSION['pseudo'] = $utilisateur->getPseudo();
             $_SESSION['id'] = $utilisateur->getIdUser();
             $message = '<p>Bienvenue ' . $utilisateur->getPseudo() . ', vous êtes maintenant connecté!</p>';
-            header("refresh:3,url=index.php?action=MenuListe");?>
+            header("refresh:2,url=index.php?action=MenuListe");?>
 		<?php }
     else // Acces pas OK !
         {
-            $message = '<p>Une erreur s\'est produite 	    pendant votre identification.<br /> Le mot de passe ou le pseudo
+            $message = '<p>Une erreur s\'est produite pendant votre identification.<br /> Le mot de passe ou le pseudo
             entré n\'est pas correcte.</p>';
-            header("refresh:3,url=index.php?action=connect");
+            header("refresh:2,url=index.php?action=connect");
         }
     }
     echo $message;
