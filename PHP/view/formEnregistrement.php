@@ -16,8 +16,8 @@ else //On est dans le cas traitement
     //On récupère les variables
     $i = 0; // compte le nombre d'erreurs à afficher
     $pseudo=$_POST['pseudo'];
-    $pass = md5($_POST['password']); // on hache le password avec md5
-    $confirm = md5($_POST['confirm']);
+    $pass = md5($_POST['motDePasse']); // on hache le password avec md5
+    $confirm = md5($_POST['confirm-mdp']);
     //Vérification du pseudo
     $utilisateur  = UserManager::getByPseudo($pseudo);
     if ($utilisateur->getIdUser()!=null)
@@ -42,7 +42,7 @@ else //On est dans le cas traitement
  
     if ($i==0) // S'il n'y a pas d'erreur
     {
-    	$nouvelUtilisateur = new User(['pseudo'=>$_POST['pseudo'],'password'=>md5($_POST['password'])]);
+    	$nouvelUtilisateur = new User(['pseudo'=>$_POST['pseudo'],'motDePasse'=>md5($_POST['motDePasse'])]);
         UserManager::add($nouvelUtilisateur); // On crée l'utilisateur dans la base
         $nouvelUtilisateur = UserManager::getByPseudo($_POST['pseudo']); //pour récupérer l'ID
         echo'<h1>Inscription terminée</h1>';
@@ -56,7 +56,7 @@ else //On est dans le cas traitement
     else // on affiche les erreurs
     {
         echo'<h1>Inscription interrompue</h1>';
-        echo'<p>Une ou plusieurs erreurs se sont produites pendant l incription</p>';
+        echo'<p>Une ou plusieurs erreurs se sont produites pendant l\'incription</p>';
         echo'<p>'.$i.' erreur(s)</p>';
         echo'<p>'.$pseudo_erreur1.'</p>';
         echo'<p>'.$pseudo_erreur2.'</p>';

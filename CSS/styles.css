@@ -79,6 +79,7 @@ body {
 .logo {
     flex: 0.5;
     align-self: center;
+    width:30%;  
 
 }
 
@@ -191,6 +192,9 @@ cursor: pointer;
 .lien-a:hover{
     color: #17C3B2;
     transform: scale(0.9);
+}
+.dessusFooter {
+    margin-bottom: 10vh;
 }
 
 .dessusFooter {

@@ -1,13 +1,5 @@
-<header class="header-co">
-    <div class="logo">
-        <img src="../Images/logoMLY.png" alt="Logo"></div>
-    <div id="title"><?php echo $titre ?></div>
-    <div class="esp"></div>
-
-</header>
-
 <div class="content">
-    <form class="connect-form" action="" method="post">
+    <form class="connect-form" action="index.php?action=nouveauUser" method="post">
 
         <div class="head-connexion">Inscription</div>
         <div class="container">
