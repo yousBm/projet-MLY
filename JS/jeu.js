@@ -121,7 +121,7 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
             break;    
             case "porte1Ouverte":
                 // si on touche l'arrivée
-                document.location.href="index.php?act=map2";
+                document.location.href="index.php?action=map2";
             break; 
             case "porte2Ferme":
                 alert("il me faut une clé!");
@@ -129,7 +129,7 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
             break;    
             case "porte2Ouverte":
                 // si on touche l'arrivée
-                document.location.href="index.php?act=map3";
+                document.location.href="index.php?action=map3";
             break; 
         }
         return false;
