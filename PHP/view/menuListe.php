@@ -36,7 +36,7 @@ $perso = PersonnageManager::getList();
         <div class="btn3">
             <a href="index.php?action=connect" class="btn">Déconnexion</a>
             <a href="" class="btn">Nouvelle partie</a>
-            <a href="" class="btn">Voir scores</a>
+            <a href="index.php?action=scoreListe" class="btn">Voir scores</a>
         </div>
     </div>
 </form>
