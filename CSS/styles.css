@@ -199,10 +199,11 @@ cursor:url(../Images/glove3.png) 4 12,pointer;;
 .lien-a:hover{
     color: #17C3B2;
     transform: scale(0.9);
+    cursor:url(../Images/glove3.png) 4 12,pointer;;
 }
 
 .dessusFooter {
-    margin-bottom: 20vw;
+    margin-bottom: 20vh;
 }
 
 footer {
@@ -212,7 +213,7 @@ footer {
     display: flex;
     justify-content: center;
     color: black;
-    height: 13vh;
+    height: 10vh;
     background: linear-gradient(#17C3B2,#E0F2E9);
     align-items: center;
     text-align: center;

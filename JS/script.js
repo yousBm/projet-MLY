@@ -7,3 +7,6 @@ var option = document.getElementById('perso'+idSelected)
 document.getElementById("img").innerHTML="<img src='"+option.getAttribute("image")+"' alt=''>";
 document.getElementById("description").innerHTML=option.getAttribute("description");
 }
+
+/****Connexion *****/
+// on verifie 
