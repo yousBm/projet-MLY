@@ -3,6 +3,13 @@
 
 <head>
     <meta charset="utf-8" name="viewport" content="width-device-width,initial-scale=1">
-    <title>Menu</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/13bc1841db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/styles.css"> 
+    <link rel="stylesheet" href="CSS/map1.css"> 
+    <title>Jeumly</title>
 </head>
+
+    
+    

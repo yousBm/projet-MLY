@@ -4,10 +4,11 @@ $niveau = NiveauManager::getList();
 $perso = PersonnageManager::getList();
 ?>
 
-<form action="" method="POST">
+<form action="index.php?action=map1" method="POST">
     <div class="menu">
         <div class="menuderoulant">
             <select name="choixNiveau" id="choixNiveau" class="menuchoix">
+            <option value="niveau">Choix du niveau</option>
                 <?php
                 foreach ($niveau as $elt) {
                 ?>
@@ -17,7 +18,7 @@ $perso = PersonnageManager::getList();
         </div>
         <div class="menuderoulant">
             <select name="choixPerso" id="choixPerso" class="menuchoix">
-                <option value="">choisissez votre personnage</option>
+                <option value="perso">Choix du personnage</option>
                 <?php
                 $i=1;
                 foreach ($perso as $elt) {
@@ -34,9 +35,11 @@ $perso = PersonnageManager::getList();
             </div>
         </div>
         <div class="btn3">
-            <a href="" class="btn">Déconnection</a>
-            <a href="" class="btn">Nouvelle partie</a>
-            <a href="" class="btn">Voir scores</a>
+            <a href="index.php?action=connect" class="btn">Déconnexion</a>
+            <a href="index.php?action=map1" class="btn">Nouvelle partie</a>
+            <a href="index.php?action=scoreListe" class="btn">Voir scores</a>
         </div>
     </div>
 </form>
+
+</body>

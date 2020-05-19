@@ -1,11 +1,3 @@
-<header class="header-co">
-    <div class="logo">
-        <img src="../Images/logoMLY.png" alt="Logo"></div>
-    <div id="title"><?php echo $titre ?></div>
-    <div class="esp"></div>
-
-</header>
-
 <div class="content">
     <form class="connect-form" action="index.php?action=connect" method="post">
 
@@ -25,9 +17,9 @@
         </div>
 
 
-        <div class="centrer">
-            <input class="bouton centrer" type="submit" value="Valider" />
-            <a class="lien-a" href="inscription.html">Pas encore inscrit ?</a>
+        <div class="centre">
+            <input class="button" type="submit" value="Valider" />
+            <a class="lien-a" href="index.php?action=nouveauUser">Pas encore inscrit ?</a>
         </div>
 
     </form>
