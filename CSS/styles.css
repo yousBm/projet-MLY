@@ -5,11 +5,12 @@
 }
 
 /*****************  Menu Liste   *******/
-body {
+html,body {
     margin: 0vw;
     padding: 0vw;
     background-color:var(--color-grey);
     font-family: 'Berkshire Swash',cursive;
+    cursor: url(../Images/glove1.png) 4 12, auto;
 }
 
 .menu {
@@ -20,6 +21,7 @@ body {
 .menuderoulant {
     padding: 1vw;
     text-align: center;
+    cursor:url(../Images/glove3.png) 4 12,pointer;
 }
 
 .menuchoix {
@@ -28,6 +30,7 @@ body {
     border-radius: 10px;
     border: solid 3px wheat;
     text-align: center;
+    cursor:url(../Images/glove3.png) 4 12,pointer;
 }
 
 .affichagePerso {
@@ -49,6 +52,7 @@ body {
 .btn3 {
     padding: 2vw;
     text-align: center;
+    cursor:url(../Images/glove3.png) 4 12,pointer;
 }
 
 .btn {
@@ -60,6 +64,7 @@ body {
     color: darkblue;
     margin: 5vw;
     margin-bottom: 5vh;
+    cursor:url(../Images/glove3.png) 4 12,pointer;
 }
 
 /*************  Connexion ****************/
@@ -161,7 +166,7 @@ i {
     font-size: 1em;
     padding: 0.4vw 1vw;
     z-index: 10;
-    cursor: pointer;
+    cursor:url(../Images/glove3.png) 4 12,pointer;;
 }
 
 .fa-unlock-alt {
@@ -176,7 +181,7 @@ margin: 1vh 1vw 1.5vh 1vw;
 border-radius: 12px;
 border: 1px solid #17C3B2;
 font-family: 'Berkshire swash',sans-serif;
-cursor: pointer;
+cursor:url(../Images/glove3.png) 4 12,pointer;;
 
 }
 
@@ -291,7 +296,7 @@ body {
 }
 .boutonRetour:hover{
     background-color: var(--color-blue);
-    cursor: pointer;
+    cursor:url(../Images/glove3.png) 4 12,pointer;
     transition-duration: 1s;
     transform: scale(1.1);
 }
