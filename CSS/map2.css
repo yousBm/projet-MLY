@@ -90,6 +90,19 @@ img{
     display: flex;
     flex-direction: column;
 }
+#playerMap2 {
+    position: absolute;
+    top: 78vh;
+    left: 94vw;
+    width: 4vw;
+    height: 7vh;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    box-shadow: black 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+}
 .hautPerso{
     flex: 1;
     display: flex;
@@ -159,11 +172,10 @@ img{
     box-shadow: black 2px 2px 2px;
 }
 /*terrain*/
-.terrainMap1{
+.terrainMap2{
     width: 100vw;
     height: 88vh;
-    background-image: url("../Images/decor/terrain.png"); 
-    /* background-color: gray; */
+    background-image: url("../Images/decor/terrain2Abimé.png"); 
 }
 /*Obstacles*/
 .obstacle {
@@ -198,95 +210,126 @@ img{
     height: 6vh;
 }
 /*lines*/
-.line05{
-    left: 17vw;
+.line20{
+    left: 0vw;
     width: 10vw;
     top: 25vh;
     height: 6vh;
 }
-.line06{
+.line21{
     top: 0vw;
-    left: 26vw;
+    left: 21vw;
     width: 1vw;
-    height: 50vh;
+    height: 34vh;
 }
-.line07{
-    top: 65vh;
+.line22{
+    top: 48vh;
     left: 0vw;
-    width: 27vw;
+    width: 22vw;
     height: 6vh;
 }
-.line08{
+.line23{
     top: 25vh;
-    left: 50vw;
+    left: 37vw;
     width: 1vw;
     height: 62vh;
 }
-.line09{
+.line24{
     top: 25vh;
-    left: 41vw;
+    left: 37vw;
     width: 10vw;
     height: 6vh;
 }
-.line10{
-    top: 25vh;
-    left: 26vw;
-    width: 7vw;
-    height: 6vh;
+.line25{
+    top: 53vh;
+    left: 19vw;
+    width: 3vw;
+    height: 18vh;
 }
-.line11{
+.line26{
     top: 65vh;
     left: 37vw;
     width: 27vw;
     height: 6vh;
 }
-.line12{
-    top: 25vh;
+.line27{
+    top: 17vh;
     left: 63vw;
     width: 1vw;
-    height: 42vh;
+    height: 37vh;
 }
-.line13{
-    top: 25vh;
+.line28{
+    top: 17vh;
     left: 63vw;
     width: 10vw;
     height: 6vh;
 }
-.line14{
+.line29{
     top: 25vh;
     left: 83vw;
     width: 17vw;
     height: 6vh;
 }
-.line15{
+.line30{
     top: 65vh;
-    left: 74vw;
-    width: 26vw;
+    left: 83vw;
+    width: 17vw;
     height: 6vh;
 }
-.line16{
-    top: 25vh;
+.line31{
+    top: 45vh;
     left: 83vw;
     width: 1vw;
     height: 25vh;
 }
-.line17{
-    top: 3.5vh;
-    left: 26vw;
-    width: 5vw;
-    height: 7.5vh;
+.line32{
+    top: 4.5vh;
+    left: 37vw;
+    width: 1vw;
+    height: 9.5vh;
 }
-.line18{
-    top: 80vh;
-    left: 0vw;
+.line33{
+    top: 68vh;
+    left: 37vw;
     width: 5vw;
     height: 9vh;
 }
-.line19{
+.line34{
+    top: 29vh;
+    left: 95vw;
+    width: 4vw;
+    height: 7.5vh;
+}
+.line35{
     top: 70vh;
     left: 95vw;
     width: 4vw;
     height: 7.5vh;
+}
+.line36{
+    top: 29vh;
+    left: 95vw;
+    width: 4vw;
+    height: 4vh;
+}
+.line37{
+    top: -1vh;
+    left: 4vw;
+    width: 4vw;
+    height: 7.5vh;
+    z-index: 1000;
+}
+.line38{
+    top: 29vh;
+    left: 95vw;
+    width: 4vw;
+    height: 4vh;
+}
+.line39{
+    top: 33vh;
+    left: 95vw;
+    width: 4vw;
+    height: 4vh;
 }
 /*deco**********************************************************************/
 .marron{
@@ -296,106 +339,124 @@ img{
 .mur{
     position: absolute;
 }
-#mur01{
+#mur21{
     top: 1.5vh;
     left: 1vw;
-    width: 25vw;
+    width: 13vw;
     height: 4vh;
 }
-#mur02{
+#mur22{
     top: 1.5vh;
-    left: 27vw;
-    width: 25vw;
+    left: 14vw;
+    width: 7vw;
     height: 4vh;
 }
-#mur03{
+#mur23{
     top: 1.5vh;
-    left: 52vw;
-    width: 25vw;
+    left: 22vw;
+    width: 15vw;
     height: 4vh;
 }
-#mur04{
+#mur24{
     top: 1.5vh;
-    left: 73vw;
+    left: 38vw;
     width: 26vw;
     height: 4vh;
 }
-#mur05{
-    top: 26.5vh;
-    left: 27vw;
-    width: 5.5vw;
+#mur25{
+    top: 1.5vh;
+    left: 64vw;
+    width: 23vw;
     height: 4vh;
 }
-#mur06{
+#mur26{
     top: 26.5vh;
-    left: 17.5vw;
+    left: 1vw;
     width: 8.5vw;
     height: 4vh;
 }
-#mur07{
-    top: 66.5vh;
+#mur27{
+    top: 49.5vh;
     left: 1vw;
-    width: 25.4vw;
+    width: 18vw;
     height: 4vh;
 }
-#mur08{
+#mur28{
     top: 66.5vh;
-    left: 74.3vw;
-    width: 24.4vw;
+    left: 83.3vw;
+    width: 16.4vw;
     height: 4vh;
 }
-#mur09{
+#mur29{
     top: 26.5vh;
     left: 84vw;
     width: 15.2vw;
     height: 4vh;
 }
-#mur10{
+#mur30{
     top: 66.5vh;
-    left: 37.3vw;
-    width: 12.6vw;
+    left: 38vw;
+    width: 12.9vw;
     height: 4vh;
 }
-#mur11{
+#mur31{
     top: 66.5vh;
     left: 50.9vw;
     width: 12.6vw;
     height: 4vh;
 }
-#mur12{
+#mur32{
     top: 26.5vh;
-    left: 41.4vw;
+    left: 38vw;
     width: 8.5vw;
     height: 4vh;
 }
-#mur13{
-    top: 26.5vh;
+#mur33{
+    top: 18.5vh;
     left: 64vw;
     width: 8.5vw;
     height: 4vh;
 }
-#mur14{
-    top: 3vh;
-    left: 27vw;
+#mur34{
+    top: 69vh;
+    left: 38vw;
     width: 4vw;
     height: 4vh;
 }
-#mur15{
-    top: 7vh;
-    left: 27vw;
+#mur35{
+    top: 73vh;
+    left: 38vw;
     width: 4vw;
     height: 4vh;
 }
-#mur16{
-    top: 80vh;
-    left: 1vw;
+#mur36{
+    top: 29vh;
+    left: 95vw;
     width: 4vw;
     height: 4vh;
 }
-#mur17{
-    top: 82vh;
-    left: 1vw;
+#mur37{
+    top: 33vh;
+    left: 95vw;
     width: 4vw;
+    height: 4vh;
+}
+#mur38{
+    top: 69.4vh;
+    left: 95vw;
+    width: 4vw;
+    height: 4vh;
+}
+#mur39{
+    top: 73.4vh;
+    left: 95vw;
+    width: 4vw;
+    height: 4vh;
+}
+#mur40{
+    top: 1.5vh;
+    left: 87vw;
+    width: 12vw;
     height: 4vh;
 }
 /*monstre*/
@@ -405,41 +466,53 @@ img{
 .monstre{
     border-radius: 5px;
 }
-.monstre1{
-    top:10vh;
-    left: 55vw;
+.monstre7{
+    top: 10vh;
+    left: 86vw;
     height: 7vh;
     width: 4vw;
 }
-.monstre2{
-    top: 55vh;
-    left: 10vw;
+.monstre8{
+    top: 76vh;
+    left: 28vw;
     height: 10vh;
     width: 5vw;
 }
-.monstre3{
-    top: 75vh;
+.monstre9{
+    top: 79vh;
     left: 55vw;
     height: 7vh;
     width: 4vw;
 }
-.monstre4{
-    top: 71.5vh;
-    left: 17vw;
+.monstre10{
+    top: 40.5vh;
+    left: 11vw;
     height: 7vh;
     width: 4vw;
 }
-.monstre5{
-    top: 33vh;
+.monstre11{
+    top: 45vh;
     left: 87vw;
     height: 7vh;
     width: 4vw;
 }
-.monstre6{
-    top: 34vh;
-    left: 40vw;
+.monstre12{
+    top: 23vh;
+    left: 23vw;
     height: 10vh;
     width: 5vw;
+}
+.monstre13{
+    top: 24vh;
+    left: 66vw;
+    height: 18vh;
+    width: 10vw;
+}
+.monstre14{
+    top: 34vh;
+    left: 40vw;
+    height: 7vh;
+    width: 4vw;
 }
 /*piece*/
 .piece{
@@ -457,34 +530,34 @@ img{
 .pieceMenu{
 
 }
-#piece1{
-    top: 73vh;
-    left: 45vw;
+#piece5{
+    top: 56vh;
+    left: 13vw;
     width: 2vw;
     height: 4vh;
 }
-#piece2{
+#piece6{
     top: 7vh;
     left: 94vw;
     width: 2vw;
     height: 4vh;
 }
-#piece3{
-    top: 59vh;
-    left: 56vw;
+#piece7{
+    top: 6vh;
+    left: 24vw;
     width: 2vw;
     height: 4vh;
 }
-#piece4{
-    top: 32vh;
-    left: 95vw;
+#piece8{
+    top: 79vh;
+    left: 39vw;
     width: 2vw;
     height: 4vh;
 }
 /*key*/
-#key1{
-    top: 72vh;
-    left: 2vw;
+#key2{
+    top: 60vh;
+    left: 90vw;
     height: 4vh;
     width: 3vw;
 }
