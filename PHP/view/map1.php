@@ -1,3 +1,6 @@
+<?php $nomDuPerso = $_POST['choixPerso'];
+var_dump($nomDuPerso);
+?>
 <body id="map1">
     <div class="contenu">
         <div class="terrainMap1">
@@ -83,7 +86,7 @@
         <div id="key1" class="obstacle key"><img src="../../Images/decor/key.png" alt=""></div>
         <div id="" class="obstacle porte1"><img src="" alt="" srcset=""></div>
         <div class="menuJeu">
-            <div class="nomPerso">Joe l'edenté</div>
+            <div class="nomPerso"><?php echo $nomDuPerso ?></div>
             <div class="vie">
                 <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
                 <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
@@ -99,6 +102,8 @@
                 <div id="nombrePiece" class="nombrePiece">0</div>
             </div>
             <div class="keyMenu" id="keyMenu"></div>
-            <div class="time">00:00</div>
+            <div class="time" id="time">00:00</div>
         </div>
     </div>
+    <script src="JS/jeu.js"></script>
+    </body>
