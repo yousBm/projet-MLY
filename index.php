@@ -9,6 +9,14 @@ function ChargerClasse($classe)
         require "PHP/model/" . $classe . ".Class.php";
     }
 }
+
+function afficherPageSansFooter($chemin, $page, $titre)
+{
+    require  'PHP/view/head.php';
+    require  'PHP/view/header.php';
+    require $chemin . $page . '.php';
+}
+
 spl_autoload_register("ChargerClasse");
 function afficherPage($chemin, $page, $titre)
 {
@@ -42,11 +50,15 @@ if (isset($_GET['action'])) {
                 break;
             }
         case 'menuListe': {
-                afficherPage('PHP/view/', 'menuListe', "Menu du jeu");
+            afficherPage('PHP/view/', 'menuListe', "Menu du jeu");
                 break;
             }
         case 'scoreListe': {
                 afficherPage('PHP/view/', 'scoreListe', "Liste des 10 meilleurs scores");
+                break;
+            }
+        case 'map1': {
+            afficherPageSansFooter('PHP/view/', 'map1', "map n°1");
                 break;
             }
     }
