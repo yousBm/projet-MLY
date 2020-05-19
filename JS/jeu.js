@@ -173,3 +173,15 @@ document.addEventListener('keydown', function (event) {
 }
 });
 //========================================================================>
+//------------------------------- fonction time ----------------------------------------
+
+var sec = 0; // on définit le compteur de seconde initial
+
+// ===> Compte le nombre de secondes depuis le début de la partie
+function startTimer() {
+    document.getElementById('time').innerHTML = "Temps joué : " + sec + " sec";
+    sec++;
+}
+// il faut l'arreter par rapport au point de vie ou la fin de la partie 
+timer = setInterval(startTimer, 1000); // au moment du début de la parti 
+// clearInterval(timer); // on arrête le timer
