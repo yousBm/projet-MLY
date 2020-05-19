@@ -1,4 +1,5 @@
 <?php
+session_start();
 function ChargerClasse($classe)
 {
     if (file_exists("PHP/controller/" . $classe . ".Class.php")) {
@@ -29,7 +30,7 @@ function afficherPage($chemin, $page, $titre)
 Parametre::init();
 //on active la connexion 
 DbConnect::init();
-session_start();
+
 // A l'include de la page Route, le code suivant est exécuté
 // Si la variable $get existe, on exploite les informations pour afficher la bonne page
 if (isset($_GET['action'])) {

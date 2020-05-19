@@ -12,14 +12,14 @@
             <div class="contenu">
                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                 <input class="input-co" type="password" name="motDePasse" id="motDePasse" maxlength="30" placeholder="Entrez votre mot de passe" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,15})" required>
-                <i class="fa fa-eye" aria-hidden="true"></i>
+                <div id="oeil"><i class="fa fa-eye" aria-hidden="true"></i></div>
             </div>
-        </div>
 
 
-        <div class="centre">
-            <input class="button" type="submit" value="Valider" />
-            <a class="lien-a" href="index.php?action=nouveauUser">Pas encore inscrit ?</a>
+            <div class="centre">
+                <input class="button" type="submit" value="Valider" />
+                <a class="lien-a" href="index.php?action=nouveauUser">Pas encore inscrit ?</a>
+            </div>
         </div>
 
     </form>
