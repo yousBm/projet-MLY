@@ -71,6 +71,34 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
                 nombrePiece=parseInt(nombrePiece)+1;
                 document.getElementById("nombrePiece").innerHTML=nombrePiece;
             break;
+            case "piece5":
+                piece5=document.getElementById("piece5");
+                piece5.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece6":
+                piece6=document.getElementById("piece6");
+                piece6.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece7":
+                piece7=document.getElementById("piece7");
+                piece7.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece8":
+                piece8=document.getElementById("piece8");
+                piece8.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
             case "key1":
                 key1=document.getElementById("key1");
                 key1.setAttribute("class","invisible");
@@ -79,13 +107,29 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
                 porte1=document.getElementById("porte1Ferme");
                 porte1.setAttribute("id","porte1Ouverte");
             break;
+            case "key2":
+                key2=document.getElementById("key2");
+                key2.setAttribute("class","invisible");
+                keyMenu=document.getElementById("keyMenu");
+                keyMenu.innerHTML="<img class='keyDansMenu' src='../../Images/decor/key.png' alt=''>";
+                porte2=document.getElementById("porte2Ferme");
+                porte2.setAttribute("id","porte2Ouverte");
+            break;
             case "porte1Ferme":
                 alert("il me faut une clé!");
                 // si on touche l'arrivée
             break;    
             case "porte1Ouverte":
                 // si on touche l'arrivée
-                document.location.href="index.php?act=map2";
+                document.location.href="index.php?action=map2";
+            break; 
+            case "porte2Ferme":
+                alert("il me faut une clé!");
+                // si on touche l'arrivée
+            break;    
+            case "porte2Ouverte":
+                // si on touche l'arrivée
+                document.location.href="index.php?action=map3";
             break; 
         }
         return false;
@@ -111,7 +155,6 @@ document.addEventListener('keydown', function (event) {
             document.getElementById("droite").style.left="0";
             document.getElementById("gauche").style.top="0";
             document.getElementById("droite").style.top="0";
-            document.getElementsByClassName("blue")[0].style.left;
             break;
         case 39: // droite(102)
             move(speed, 0);
@@ -126,14 +169,10 @@ document.addEventListener('keydown', function (event) {
             document.getElementById("droite").style.left="0";
             document.getElementById("gauche").style.top="0.4vw";
             document.getElementById("droite").style.top="0.4vw";
-            document.getElementsByClassName("blue")[0].style.left;
             break;       
 }
 });
 //========================================================================>
-player=document.getElementById("playerMap1");
-player.setAttribute("class","persoChercheurDor");
-
 //------------------------------- fonction time ----------------------------------------
 
 var sec = 0; // on définit le compteur de seconde initial

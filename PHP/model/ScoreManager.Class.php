@@ -60,7 +60,7 @@ $scores[] = new Score($donnees);
 return $scores;
 }
 
-public function get10Meilleur(){
+public static function get10Meilleur(){
 $db = DbConnect::getDb();
 $scores = [];
 $q = $db->query("SELECT * FROM `scores` order by scoreObtenu desc , time asc limit 10");

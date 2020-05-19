@@ -2,7 +2,7 @@
 $scores=ScoreManager::get10Meilleur();
 echo'
 <div class="contenu column">
-<div class="titreTab center"><h1 class="ecritureBlanche">TOP 10 DES MEILLEURS SCORES</h1></div>
+<div class="titreTab center"><h2 class="ecritureBlanche">TOP 10 DES MEILLEURS SCORES</h2></div>
 <div class="tab marge borderBlue borderRadius">
     <div class="entete row fond ecritureBlanche">
         <div class="titreEntete case">Rang</div>
@@ -25,7 +25,7 @@ echo'
     }
     echo '
 <div class="bouton center">
-    <div class="boutonRetour center margeBoutonTop ecritureBlanche">Retour</div>
+<a href="index.php?action=menuListe"><div class="boutonRetour center margeBoutonTop ecritureBlanche">Retour</div></a>
 </div>
 </div>';
 ?>
