@@ -94,3 +94,4 @@ public static function calculScore()
     
 }
 
+}

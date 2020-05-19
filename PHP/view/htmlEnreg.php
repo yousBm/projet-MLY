@@ -22,8 +22,8 @@
         </div>
 
 
-        <div class="centrer">
-            <input class="bouton centrer" type="submit" value="Valider" />
+        <div class="centre">
+            <input class="button" type="submit" value="Valider" />
         </div>
 
     </form>
