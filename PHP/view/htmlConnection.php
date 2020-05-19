@@ -17,8 +17,8 @@
         </div>
 
 
-        <div class="centrer">
-            <input class="bouton centrer" type="submit" value="Valider" />
+        <div class="centre">
+            <input class="button" type="submit" value="Valider" />
             <a class="lien-a" href="index.php?action=nouveauUser">Pas encore inscrit ?</a>
         </div>
 

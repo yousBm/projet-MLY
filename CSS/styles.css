@@ -171,7 +171,7 @@ i {
     border-right: solid 2px var(--color-blue);
     padding: 0.4vw 1.08vw;
 }
-.bouton {
+.button {
 padding:1.5vh;
 margin: 1vh 1vw 1.5vh 1vw;
 border-radius: 12px;
@@ -181,7 +181,7 @@ cursor: pointer;
 
 }
 
-.bouton:hover{
+.button:hover{
     background-color: #17C3B2;
     color:white;
     transform: scale(1.2);
@@ -212,4 +212,87 @@ footer {
     background: linear-gradient(#17C3B2,#E0F2E9);
     align-items: center;
     text-align: center;
+}
+
+/************* Map1   ***************/
+/* html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+} */
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.marge{
+    margin-left: 20vw;
+    margin-top: 5vw;
+}
+.borderBlue{
+    border: 3px inset var(--color-turquoise);
+}
+.borderRadius{
+    border-radius: 10px;
+}
+.margeBoutonTop{
+    margin-top: 5vh;
+}
+/*************************************************couleur*/
+.ligne{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.ligne:nth-child(odd){
+    background-color: rgba(126, 125, 125, 0.5);
+}
+
+.fond{
+    background-color: var(--color-turquoise);
+    border-radius :8px 8px 0 0;
+    height: 5vh;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.titreTab{
+    text-shadow:4px 1px var(--color-turquoise);
+    justify-content: center;
+}
+.ecritureBlanche{
+    color: white;
+}
+/********************************************contenu page*/
+.case{
+    width: 12vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab{
+    width: 60vw;
+    box-shadow: 2px 2px 2px black;
+}
+.boutonRetour{
+    width: 10vw;
+    height: 4vh;
+    margin-bottom: 2vh;
+    background-color:var(--color-turquoise);
+    align-items: center;
+    box-shadow: 2px 2px 2px black;
+    color:white;
+    border-radius: 10px 0 10px 0;
+}
+.boutonRetour:hover{
+    background-color: var(--color-blue);
+    cursor: pointer;
+    transition-duration: 1s;
+    transform: scale(1.1);
 }
