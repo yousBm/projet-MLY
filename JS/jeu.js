@@ -52,7 +52,7 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
                 img=invisibleVie.getElementsByTagName("img")[0];
                 invisibleVie.removeChild(img);
                 invisiblesVies=document.getElementsByClassName("invisibleVie");
-                if (invisiblesVies.length==6){document.location.href="index.php?action=gameover";} 
+                if (invisiblesVies.length==4){document.location.href="index.php?action=gameover";} 
                 break;
         }
         switch (id) {
@@ -223,7 +223,7 @@ function moveHorizontal()
             break;
     }
 }
-//==================================================================fonction time======>
+//==================================================================fonction Time======>
 
 var sec = 0; // on définit le compteur de seconde initial
 
@@ -261,3 +261,56 @@ switch (nomPerso)
         player.setAttribute("class","persoZombie")
         break;
 }
+
+//*********************************************************************** Gestion des cookies ********************************************************************/
+// Méthode qui permet de créer ou modifier un cookie
+
+function createCookie(name,value,days) {
+    // permet de créer un cookie
+	if (days) {
+        // si le nombre de jour est renseigné, on le transforme en millieme de seconde
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "expires="+date.toGMTString();
+	}
+    else var expires = "";
+    //le cookie doit contenir  clé=valeur;expires=temps;path=nomDomaine
+	document.cookie = name+"="+value+"; " + expires+"; path=/";
+}
+
+// Méthode qui permet de lire la valeur d’un cookie 
+
+function readCookie(name) {
+    // on récupère tous les cookies du site en une fois, séparé par ; 
+    // on range dans un tableau chaque cookie
+    var listeCookies = document.cookie.split('; ');
+	for(let i=0;i < listeCookies.length;i++) {
+        // pour chaque cookie, on sépare en tableau la clé et la valeur
+        var unCookie = listeCookies[i].split("=");
+        // si la clé correspond au cookie cherché, on renvoi la valeur
+		if (unCookie[0]==name) return unCookie[1];
+	}
+	return null;
+}
+
+// Supprimer un cookie
+
+function eraseCookie(name) {
+    // pour supprimer un cookie, on le périme
+	createCookie(name,"",-1);
+}
+
+/************************************************************************** Enregistrer les points de vie, le temps et le nbres de pièces **************************************************************************/
+
+
+
+// if (readCookie("prenom") != null && readCookie("nom") != null) {
+//     alert("bonjour M/Mme "+readCookie("nom")+" "+readCookie("prenom"))
+//     eraseCookie("prenom");
+//     eraseCookie("nom");
+// } else {
+//     var prenom = prompt("quel est votre prénom :");
+//     createCookie("prenom",prenom,5);
+//     var nom = prompt("quel est votre nom :");
+//     createCookie("nom",nom,5);
+// }
