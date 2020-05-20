@@ -19,6 +19,9 @@ img{
 .black{
     background-color: black;
 }
+.blue{
+    background-color: rgb(0, 0, 255);
+}
 /*mise en page*/
 .border{
     border: 3px black solid;
