@@ -59,7 +59,9 @@ html,body {
     text-decoration: none;
     border: 3px solid wheat;
     border-radius: 20px;
+    font-family: 'Berkshire swash',sans-serif;
     padding: 1vw;
+    font-weight: bold;
     background-color: whitesmoke;
     color: darkblue;
     margin: 5vw;

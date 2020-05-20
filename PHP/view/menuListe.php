@@ -4,7 +4,7 @@ $niveau = NiveauManager::getList();
 $perso = PersonnageManager::getList();
 ?>
 
-<form action="map1.php" method="POST">
+<form action="index.php?action=map1" method="POST">
     <div class="menu">
         <div class="menuderoulant">
             <select name="choixNiveau" id="choixNiveau" class="menuchoix">
@@ -36,7 +36,7 @@ $perso = PersonnageManager::getList();
         </div>
         <div class="btn3">
             <a href="index.php?action=connect" class="btn">Déconnexion</a>
-            <a href="index.php?action=map1" class="btn">Nouvelle partie</a>
+            <input type="submit" class="btn" value="Nouvelle partie">
             <a href="index.php?action=scoreListe" class="btn">Voir scores</a>
         </div>
     </div>
