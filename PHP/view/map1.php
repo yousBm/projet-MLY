@@ -1,4 +1,6 @@
-
+<?php $nomDuPerso = $_POST["choixPerso"];
+var_dump($nomDuPerso);
+?>
 <body id="map1">
     <div class="contenu">
         <div class="terrainMap1">
