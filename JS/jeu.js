@@ -116,7 +116,7 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
                 key1=document.getElementById("key1");
                 key1.setAttribute("class","invisible");
                 keyMenu=document.getElementById("keyMenu");
-                keyMenu.innerHTML="<img class='keyDansMenu' src='../../Images/decor/key.png' alt=''>";
+                keyMenu.innerHTML="<img class='keyDansMenu' src='Images/decor/key.png' alt=''>";
                 porte1=document.getElementById("porte1Ferme");
                 porte1.setAttribute("id","porte1Ouverte");
             break;
@@ -124,7 +124,7 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
                 key2=document.getElementById("key2");
                 key2.setAttribute("class","invisible");
                 keyMenu=document.getElementById("keyMenu");
-                keyMenu.innerHTML="<img class='keyDansMenu' src='../../Images/decor/key.png' alt=''>";
+                keyMenu.innerHTML="<img class='keyDansMenu' src='Images/decor/key.png' alt=''>";
                 porte2=document.getElementById("porte2Ferme");
                 porte2.setAttribute("id","porte2Ouverte");
             break;
