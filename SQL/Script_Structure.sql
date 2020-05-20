@@ -25,7 +25,7 @@ CREATE TABLE Users(
         idUser       Int  Auto_increment  NOT NULL PRIMARY KEY,
         pseudo       Varchar (100) NOT NULL ,
         motDePasse   Varchar (100) NOT NULL ,
-        idPersonnage Int NOT NULL
+        idPersonnage Int DEFAULT NULL
 )ENGINE=InnoDB;
 
 

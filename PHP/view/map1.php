@@ -1,5 +1,4 @@
 <?php $nomDuPerso = $_POST["choixPerso"];
-var_dump($nomDuPerso);
 ?>
 <body id="map1">
     <div class="contenu">
@@ -86,9 +85,17 @@ var_dump($nomDuPerso);
         <div id="key1" class="obstacle key"><img src="../../Images/decor/key.png" alt=""></div>
         <div id="" class="obstacle porte1"><img src="" alt="" srcset=""></div>
         <div class="menuJeu">
-            <div class="nomPerso">
-                
-            </div>
+            <div class="nomPerso"> <?php
+                if($nomDuPerso == "perso1") {
+                    echo "Joe l'édenté";
+                } else if ($nomDuPerso == "perso2") {
+                    echo "Prince moustache";
+                } else if ($nomDuPerso == "perso3") {
+                    echo "Totor le rouquin"; 
+                } else {
+                    echo "Jack le zombie"; 
+                }
+           ?> </div>
             <div class="vie">
                 <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
                 <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
