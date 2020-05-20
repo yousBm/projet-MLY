@@ -41,7 +41,7 @@ html,body {
 
 #img {
     text-align: center;
-    width: 25%;
+    width: 15%;
 }
 
 .description {
@@ -175,6 +175,41 @@ i {
     border-right: solid 2px var(--color-blue);
     padding: 0.4vw 1.08vw;
 }
+#message {
+    display:none;
+    background:var(--color-grey);
+    color:white;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 1em;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
 .button {
 padding:1.5vh;
 margin: 1vh 1vw 1.5vh 1vw;
