@@ -82,7 +82,7 @@
             <div id="mur19" class="mur"><img src="" alt=""></div>
             <div id="mur20" class="mur"><img src="" alt=""></div>
         </div>
-        <div id="key1" class="obstacle key"><img src="../../Images/decor/key.png" alt=""></div>
+        <div id="key1" class="obstacle key"><img src="Images/decor/key.png" alt=""></div>
         <div id="" class="obstacle porte1"><img src="" alt="" srcset=""></div>
         <div class="menuJeu">
             <div class="nomPerso"><?php
