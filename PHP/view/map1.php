@@ -1,4 +1,5 @@
 <?php $nomDuPerso = $_POST["choixPerso"];
+$perso=PersonnageManager::getList();
 ?>
 <body id="map1">
     <div class="contenu">
@@ -87,13 +88,13 @@
         <div class="menuJeu">
             <div class="nomPerso"><?php
                 if($nomDuPerso == "perso1") {
-                    echo "Joe l'édenté";
+                    echo $perso[0]->getNomPersonnage();
                 } else if ($nomDuPerso == "perso2") {
-                    echo "Prince moustache";
+                    echo $perso[1]->getNomPersonnage();
                 } else if ($nomDuPerso == "perso3") {
-                    echo "Totor le rouquin"; 
+                    echo $perso[2]->getNomPersonnage(); 
                 } else {
-                    echo "Jack le zombie"; 
+                    echo $perso[3]->getNomPersonnage(); 
                 }
            ?></div>
             <div class="vie">
@@ -111,7 +112,7 @@
                 <div id="nombrePiece" class="nombrePiece">0</div>
             </div>
             <div class="keyMenu" id="keyMenu"></div>
-            <div class="time" id="time">00:00</div>
+            <div class="time" id="time">0</div>
         </div>
     </div>
     <script src="JS/jeu.js"></script>

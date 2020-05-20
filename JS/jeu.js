@@ -248,16 +248,16 @@ else if (body.id=="map2")
 nomPerso=document.getElementsByClassName("nomPerso")[0].innerHTML;
 switch (nomPerso)
 {
-    case "Joe l'édenté":
+    case "joe l'édenté":
         player.setAttribute("class","persoChercheurDor")
         break;
-    case "Prince moustache":
+    case "Prince Moustache":
         player.setAttribute("class","persoPrinceMoustache")
         break;
-    case "Totor le rouquin":
+    case "Totor, le rouquin":
         player.setAttribute("class","persoLeRouquin")
         break;
-    case "Jack le zombie":
+    case "Jack le Zombie":
         player.setAttribute("class","persoZombie")
         break;
 }
