@@ -102,8 +102,6 @@ $perso=PersonnageManager::getList();
                 <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
                 <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
                 <div class="invisibleVie viePerso"><img src="" alt=""></div>
-                <div class="invisibleVie viePerso"><img src="" alt=""></div>
-                <div class="invisibleVie viePerso"><img src="" alt=""></div>
             </div>
             <div class="menuOr">
                 <div class="pieceMenu">
