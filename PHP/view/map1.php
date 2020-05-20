@@ -1,4 +1,4 @@
-<?php $nomDuPerso = $_POST['choixPerso'];
+<?php $nomDuPerso = $_POST["choixPerso"];
 var_dump($nomDuPerso);
 ?>
 <body id="map1">
@@ -86,14 +86,14 @@ var_dump($nomDuPerso);
         <div id="key1" class="obstacle key"><img src="../../Images/decor/key.png" alt=""></div>
         <div id="" class="obstacle porte1"><img src="" alt="" srcset=""></div>
         <div class="menuJeu">
-            <div class="nomPerso"><?php echo $nomDuPerso ?></div>
+            <div class="nomPerso"></div>
             <div class="vie">
                 <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
                 <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
                 <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
-                <div class="viePerso"><img src="" alt=""></div>
-                <div class="viePerso"><img src="" alt=""></div>
-                <div class="viePerso"><img src="" alt=""></div>
+                <div class="invisibleVie viePerso"><img src="" alt=""></div>
+                <div class="invisibleVie viePerso"><img src="" alt=""></div>
+                <div class="invisibleVie viePerso"><img src="" alt=""></div>
             </div>
             <div class="menuOr">
                 <div class="pieceMenu">

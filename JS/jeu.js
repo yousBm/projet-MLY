@@ -41,6 +41,19 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color,id) {
             case "rgb(0, 0, 0)":
                 // si on touche un mur
                 break;
+            case "rgb(0, 0, 255)":
+                // si on touche un monstre
+                degat();
+                coeurs=document.getElementsByClassName("coeur");
+                coeurASupprimer=coeurs.length-1;
+                coeur = document.getElementsByClassName("coeur")[coeurASupprimer];
+                coeur.setAttribute("class","invisibleVie  viePerso");
+                invisibleVie=document.getElementsByClassName("invisibleVie")[0];
+                img=invisibleVie.getElementsByTagName("img")[0];
+                invisibleVie.removeChild(img);
+                invisiblesVies=document.getElementsByClassName("invisibleVie");
+                if (invisiblesVies.length==6){document.location.href="index.php?action=gameover";} 
+                break;
         }
         switch (id) {
             case "piece1":
@@ -172,6 +185,28 @@ document.addEventListener('keydown', function (event) {
             break;       
 }
 });
+//==============================================gestion du deplacement après degats=====>
+function degat()
+{
+    var speed2 = 20; // vitesse de déplacement
+    var event = event || window.event, // pour la compatibilite avec tous les navigateurs
+    keyCode = event.keyCode;
+    switch (keyCode) {
+        case 37: // gauche(100)
+            move(speed2, 0);
+            break;
+        case 38: // haut(104)
+            move(0, speed2);
+            break;
+        case 39: // droite(102)
+            move(-speed2, 0);
+            break;
+            case 40: // bas(98)
+            move(0, -speed2)
+            break;
+                    }
+}
+
 //========================================================================>
 //------------------------------- fonction time ----------------------------------------
 

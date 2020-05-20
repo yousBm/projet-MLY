@@ -14,7 +14,6 @@ function ChargerClasse($classe)
 function afficherPageSansFooter($chemin, $page, $titre)
 {
     require  'PHP/view/head.php';
-    require  'PHP/view/header.php';
     require $chemin . $page . '.php';
 }
 
@@ -60,6 +59,10 @@ if (isset($_GET['action'])) {
             }
         case 'map1': {
             afficherPageSansFooter('PHP/view/', 'map1', "map n°1");
+                break;
+            }
+        case 'gameover': {
+            afficherPageSansFooter('PHP/view/', 'gameover', "map n°1");
                 break;
             }
     }
