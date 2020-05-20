@@ -206,9 +206,24 @@ function degat()
             break;
                     }
 }
+//==================================================mouve Horizontal=====>
+function moveHorizontal()
+{
+    body=document.getElementsByTagName("body")[0];
+    switch(body.id){
+        case "map1":
+            blue=document.getElementsByClassName("blue");
+            blue0=blue[0]
+            var styleBlue0 = window.getComputedStyle(blue0, null);
+            var pE = parseInt(styleBlue0.left);
 
-//========================================================================>
-//------------------------------- fonction time ----------------------------------------
+            break;
+        case "map2":
+            blue=document.getElementsByClassName("blue");
+            break;
+    }
+}
+//==================================================================fonction time======>
 
 var sec = 0; // on définit le compteur de seconde initial
 
@@ -220,3 +235,21 @@ function startTimer() {
 // il faut l'arreter par rapport au point de vie ou la fin de la partie 
 timer = setInterval(startTimer, 1000); // au moment du début de la parti 
 // clearInterval(timer); // on arrête le timer
+//========================================================================>
+player=document.getElementById("playerMap1");
+nomPerso=document.getElementsByClassName("nomPerso")[0].innerHTML;
+switch (nomPerso)
+{
+    case "Joe l'édenté":
+        player.setAttribute("class","persoChercheurDor")
+        break;
+    case "Prince moustache":
+        player.setAttribute("class","persoPrinceMoustache")
+        break;
+    case "Totor le rouquin":
+        player.setAttribute("class","persoLeRouquin")
+        break;
+    case "Jack le zombie":
+        player.setAttribute("class","persoZombie")
+        break;
+}

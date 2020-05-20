@@ -62,7 +62,11 @@ if (isset($_GET['action'])) {
                 break;
             }
         case 'gameover': {
-            afficherPageSansFooter('PHP/view/', 'gameover', "map n°1");
+            afficherPageSansFooter('PHP/view/', 'gameover', "");
+                break;
+            }
+        case 'bravo': {
+            afficherPageSansFooter('PHP/view/', 'bravo', "");
                 break;
             }
     }
