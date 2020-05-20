@@ -5,11 +5,12 @@
 }
 
 /*****************  Menu Liste   *******/
-html,body {
+html,
+body {
     margin: 0vw;
     padding: 0vw;
-    background-color:var(--color-grey);
-    font-family: 'Berkshire Swash',cursive;
+    background-color: var(--color-grey);
+    font-family: 'Berkshire Swash', cursive;
     cursor: url(../Images/glove1.png) 4 12, auto;
 }
 
@@ -21,7 +22,7 @@ html,body {
 .menuderoulant {
     padding: 1vw;
     text-align: center;
-    cursor:url(../Images/glove3.png) 4 12,pointer;
+    cursor: url(../Images/glove3.png) 4 12, pointer;
 }
 
 .menuchoix {
@@ -30,7 +31,7 @@ html,body {
     border-radius: 10px;
     border: solid 3px wheat;
     text-align: center;
-    cursor:url(../Images/glove3.png) 4 12,pointer;
+    cursor: url(../Images/glove3.png) 4 12, pointer;
 }
 
 .affichagePerso {
@@ -49,10 +50,14 @@ html,body {
     color: darkblue;
 }
 
+p {
+    text-align: justify;
+}
+
 .btn3 {
     padding: 2vw;
     text-align: center;
-    cursor:url(../Images/glove3.png) 4 12,pointer;
+    cursor: url(../Images/glove3.png) 4 12, pointer;
 }
 
 .btn {
@@ -64,7 +69,7 @@ html,body {
     color: darkblue;
     margin: 5vw;
     margin-bottom: 5vh;
-    cursor:url(../Images/glove3.png) 4 12,pointer;
+    cursor: url(../Images/glove3.png) 4 12, pointer;
 }
 
 /*************  Connexion ****************/
@@ -83,7 +88,7 @@ html,body {
 .logo {
     flex: 0.5;
     align-self: center;
-    width:30%;  
+    width: 30%;
 
 }
 
@@ -95,8 +100,11 @@ html,body {
 .esp {
     flex: 0.5;
     align-self: center;
-    color:darkblue;
+    color: darkblue;
     font-family: 'Roboto', sans-serif;
+}
+.espH{
+    flex: 1;
 }
 
 .content {
@@ -133,6 +141,9 @@ html,body {
     align-items: center;
 }
 
+.regroup{
+    display: flex;
+}
 .contenu {
     width: 22vw;
     position: relative;
@@ -166,7 +177,8 @@ i {
     font-size: 1em;
     padding: 0.4vw 1vw;
     z-index: 10;
-    cursor:url(../Images/glove3.png) 4 12,pointer;;
+    cursor: url(../Images/glove3.png) 4 12, pointer;
+    ;
 }
 
 .fa-unlock-alt {
@@ -175,28 +187,24 @@ i {
     border-right: solid 2px var(--color-blue);
     padding: 0.4vw 1.08vw;
 }
+
 #message {
-    display:none;
-    background:var(--color-grey);
-    color:white;
-    position: relative;
-    padding: 20px;
-    margin-top: 10px;
-  }
-  
-  #message p {
-    padding: 10px 35px;
-    font-size: 1em;
-  }
-  
-  /* Add a green text color and a checkmark when the requirements are right */
-  .valid {
+    display: none;
+    position:absolute;
+    right: -220px;
+    top:-8px;
+    color: red;
+    text-align: justify;
+   }
+   
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
     color: green;
   }
   
   .valid:before {
     position: relative;
-    left: -35px;
+    left: -10px;
     content: "✔";
   }
   
@@ -207,34 +215,39 @@ i {
   
   .invalid:before {
     position: relative;
-    left: -35px;
+    left: -10px;
     content: "✖";
   }
+
 .button {
-padding:1.5vh;
-margin: 1vh 1vw 1.5vh 1vw;
-border-radius: 12px;
-border: 1px solid #17C3B2;
-font-family: 'Berkshire swash',sans-serif;
-cursor:url(../Images/glove3.png) 4 12,pointer;;
+    padding: 1.5vh;
+    margin: 1vh 1vw 1.5vh 1vw;
+    border-radius: 12px;
+    border: 1px solid #17C3B2;
+    font-family: 'Berkshire swash', sans-serif;
+    cursor: url(../Images/glove3.png) 4 12, pointer;
+    ;
 
 }
 
-.button:hover{
+.button:hover {
     background-color: #17C3B2;
-    color:white;
+    color: white;
     transform: scale(1.2);
     transition: 0.5s;
 }
-.lien-a{
+
+.lien-a {
     text-decoration: none;
-    color:var(--color-blue);
-    
+    color: var(--color-blue);
+
 }
-.lien-a:hover{
+
+.lien-a:hover {
     color: #17C3B2;
     transform: scale(0.9);
-    cursor:url(../Images/glove3.png) 4 12,pointer;;
+    cursor: url(../Images/glove3.png) 4 12, pointer;
+    ;
 }
 
 .dessusFooter {
@@ -249,7 +262,7 @@ footer {
     justify-content: center;
     color: black;
     height: 10vh;
-    background: linear-gradient(#17C3B2,#E0F2E9);
+    background: linear-gradient(#17C3B2, #E0F2E9);
     align-items: center;
     text-align: center;
 }
@@ -261,79 +274,93 @@ body {
     padding: 0;
     overflow-y: hidden;
 } */
-.column{
+.column {
     display: flex;
     flex-direction: column;
 }
-.row{
+
+.row {
     display: flex;
     flex-direction: row;
 }
-.center{
+
+.center {
     display: flex;
     justify-content: center;
 }
-.marge{
+
+.marge {
     margin-left: 20vw;
     margin-top: 2vw;
 }
-.borderBlue{
+
+.borderBlue {
     border: 3px inset var(--color-turquoise);
 }
-.borderRadius{
+
+.borderRadius {
     border-radius: 10px;
 }
-.margeBoutonTop{
+
+.margeBoutonTop {
     margin-top: 1vh;
 }
+
 /*************************************************couleur*/
-.ligne{
+.ligne {
     background-color: rgba(0, 0, 0, 0.5);
 }
-.ligne:nth-child(odd){
+
+.ligne:nth-child(odd) {
     background-color: rgba(126, 125, 125, 0.5);
 }
 
-.fond{
+.fond {
     background-color: var(--color-turquoise);
-    border-radius :8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
     height: 5vh;
     align-items: center;
     border-bottom: 2px solid white;
 }
-.titreTab{
-    text-shadow:4px 1px var(--color-turquoise);
+
+.titreTab {
+    text-shadow: 4px 1px var(--color-turquoise);
     width: 100vw;
     display: flex;
     justify-content: center;
 }
-.ecritureBlanche{
+
+.ecritureBlanche {
     color: white;
 }
+
 /********************************************contenu page*/
-.case{
+.case {
     width: 12vw;
     height: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.tab{
+
+.tab {
     width: 60vw;
     box-shadow: 2px 2px 2px black;
 }
-.boutonRetour{
+
+.boutonRetour {
     width: 10vw;
     height: 4vh;
-    background-color:var(--color-turquoise);
+    background-color: var(--color-turquoise);
     align-items: center;
     box-shadow: 2px 2px 2px black;
-    color:white;
+    color: white;
     border-radius: 10px 0 10px 0;
 }
-.boutonRetour:hover{
+
+.boutonRetour:hover {
     background-color: var(--color-blue);
-    cursor:url(../Images/glove3.png) 4 12,pointer;
+    cursor: url(../Images/glove3.png) 4 12, pointer;
     transition-duration: 1s;
     transform: scale(1.1);
 }
