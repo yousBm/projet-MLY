@@ -236,7 +236,15 @@ function startTimer() {
 timer = setInterval(startTimer, 1000); // au moment du début de la parti 
 // clearInterval(timer); // on arrête le timer
 //========================================================================>
-player=document.getElementById("playerMap1");
+body=document.getElementsByTagName("body")[0];
+if(body.id=="map1")
+{
+    var player = document.getElementById("playerMap1"); // joueur
+}
+else if (body.id=="map2")
+{
+    var player = document.getElementById("playerMap2"); // joueur
+}
 nomPerso=document.getElementsByClassName("nomPerso")[0].innerHTML;
 switch (nomPerso)
 {
