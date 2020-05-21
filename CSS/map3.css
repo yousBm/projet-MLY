@@ -9,6 +9,15 @@ img{
     width: 100%;
     height: 100%;
 }
+/*couleur*/
+
+.color{
+    background-color:#2c5674;
+}
+/*mise en page*/
+.border{
+    border: 3px black solid;
+}
 
 /*menuJeu************************************************************************************************/
 .menuJeu{
@@ -66,8 +75,8 @@ img{
 
 #playerMap3 {
     position: absolute;
-    top: 50vh;
-    left: 50vw;
+    top: 77vh;
+    left: 4vw;
     width: 4vw;
     height: 7vh;
     border-radius: 20px;
@@ -128,8 +137,9 @@ img{
 /************************ terrain */
 .terrainMap3{
     background-image: url("../Images/decor/phare-ConvertImage.jpg");
-    width: 95%;
-    height: 95vh;
+    background-repeat: no-repeat;
+    width:100vw ;
+    height:90vh;
 }
 /************************** Obstacles*/
 .obstacle {
@@ -137,12 +147,12 @@ img{
     border-radius: 5px;
     margin: 0;
     padding: 0;
-}
+    }
 /**************** zone*/
 .line01{
     top: 0vh;
     left: 0vw;
-    width: 1vw; 
+    width: 2vw; 
     height: 88vh;
 }
 .line02{
@@ -165,16 +175,16 @@ img{
 }
 /******************************** lines*/
 .line38{
-    left: 0vw;
-    width: 10vw;
-    top: 25vh;
-    height: 6vh;
+    left: 20vw;
+    width: 5vw;
+    top: 20vh;
+    height: 2vh;
 }
 .line39{
-    top: 0vw;
-    left: 21vw;
+    top: 5vw;
+    left: 20vw;
     width: 1vw;
-    height: 34vh;
+    height: 25vh;
 }
 .line40{
     top: 48vh;
@@ -186,7 +196,7 @@ img{
     top: 25vh;
     left: 37vw;
     width: 1vw;
-    height: 62vh;
+    height: 30vh;
 }
 .line42{
     top: 25vh;
@@ -194,6 +204,13 @@ img{
     width: 10vw;
     height: 6vh;
 }
+.line58{
+    top: 50vh;
+    left: 37vw;
+    width: 10vw;
+    height: 6vh;
+} 
+
 .line43{
     top: 53vh;
     left: 19vw;
@@ -243,10 +260,10 @@ img{
     height: 9.5vh;
 }
 .line51{
-    top: 68vh;
-    left: 37vw;
-    width: 5vw;
-    height: 9vh;
+    top: 72vh;
+    left: 11vw;
+    width: 2vw;
+    height: 15vh;
 }
 .line52{
     top: 29vh;
@@ -267,11 +284,11 @@ img{
     height: 4vh;
 }
 .line55{
-    top: -1vh;
-    left: 4vw;
-    width: 4vw;
-    height: 7.5vh;
-    z-index: 1000;
+    top: 5vh;
+    left: 8vw;
+    width: 1vw;
+    height: 10vh;
+    /* z-index: 1000; */
 }
 .line56{
     top: 29vh;
@@ -280,10 +297,23 @@ img{
     height: 4vh;
 }
 .line57{
-    top: 33vh;
-    left: 95vw;
+    top: 6vh;
+    left: 2vw;
     width: 4vw;
+    height: 6.5vh;
+    
+}
+.line59{
+    top: 40vh;
+    left: 31vw;
+    width: 7vw;
     height: 4vh;
+}
+.line60{
+    top: 45vh;
+    left: 83vw;
+    width: 3.5vw;
+    height: 2vh;
 }
 /*deco**********************************************************************/
 .marron{
@@ -302,116 +332,207 @@ img{
 #mur42{
     top: 1.5vh;
     left: 14vw;
-    width: 7vw;
+    width: 10vw;
     height: 4vh;
 }
-#mur23{
+#mur43{
     top: 1.5vh;
     left: 22vw;
-    width: 15vw;
+    width: 19vw;
     height: 4vh;
 }
-#mur24{
-    top: 1.5vh;
+#mur44{
+    top: 1vh;
     left: 38vw;
     width: 26vw;
     height: 4vh;
 }
-#mur25{
-    top: 1.5vh;
+#mur45{
+    top: 1vh;
     left: 64vw;
     width: 23vw;
     height: 4vh;
 }
-#mur26{
-    top: 26.5vh;
-    left: 1vw;
-    width: 8.5vw;
-    height: 4vh;
+#mur46{
+    top:32vh;    
+    left: 2vw;
+    width: 10vw;
+    height: 3vh;
 }
-#mur27{
+#mur47{
     top: 49.5vh;
     left: 1vw;
     width: 18vw;
     height: 4vh;
 }
-#mur28{
+#mur48{
     top: 66.5vh;
     left: 83.3vw;
     width: 16.4vw;
     height: 4vh;
 }
-#mur29{
+#mur49{
     top: 26.5vh;
     left: 84vw;
     width: 15.2vw;
     height: 4vh;
 }
-#mur30{
+#mur50{
     top: 66.5vh;
     left: 38vw;
     width: 12.9vw;
     height: 4vh;
 }
-#mur31{
+#mur51{
     top: 66.5vh;
     left: 50.9vw;
     width: 12.6vw;
     height: 4vh;
 }
-#mur32{
-    top: 26.5vh;
+#mur52{
+    top: 26vh;
     left: 38vw;
     width: 8.5vw;
     height: 4vh;
 }
-#mur33{
+#mur53{
+    top: 51vh;
+    left: 38vw;
+    width: 8.5vw;
+    height: 4vh;
+}
+#mur54{
     top: 18.5vh;
     left: 64vw;
     width: 8.5vw;
     height: 4vh;
 }
-#mur34{
-    top: 69vh;
-    left: 38vw;
+#mur55{
+    top: 54vh;
+    left: 15vw;
     width: 4vw;
     height: 4vh;
 }
-#mur35{
-    top: 73vh;
-    left: 38vw;
+#mur56{
+    top: 58vh;
+    left: 15vw;
     width: 4vw;
     height: 4vh;
 }
-#mur36{
-    top: 29vh;
+#mur57{
+    top: 31.2vh;
     left: 95vw;
     width: 4vw;
     height: 4vh;
 }
-#mur37{
-    top: 33vh;
+#mur58{
+    top: 35vh;
     left: 95vw;
     width: 4vw;
     height: 4vh;
 }
-#mur38{
+#mur59{
     top: 69.4vh;
     left: 95vw;
     width: 4vw;
     height: 4vh;
 }
-#mur39{
+#mur60{
     top: 73.4vh;
     left: 95vw;
     width: 4vw;
     height: 4vh;
 }
-#mur40{
+#mur61{
     top: 1.5vh;
     left: 87vw;
     width: 12vw;
     height: 4vh;
+}
+#mur62{
+    top: 6vh;
+    left: 85vw;
+    width: 1vw;
+    height:7vh;
+}
+#mur63{
+    top: 21vh;
+    left: 85vw;
+    width: 1vw;
+    height: 4vh;
+}
+#mur64{
+    top: 35vh;
+    left: 55vw;
+    width: 8vw;
+    height: 5vh;
+}
+/*monstre*/
+.blue{
+    box-shadow: 2px 2px 2px;
+}
+.monstre{
+    border-radius: 5px;
+}
+.monstre15{
+    top: 8vh;
+    left: 50vw;
+    height: 8vh;
+    width: 4.5vw;
+}
+.monstre16{
+    top: 76vh;
+    left: 28vw;
+    height: 10vh;
+    width: 5vw;
+}
+.monstre17{
+    top: 77vh;
+    left: 55vw;
+    height: 8vh;
+    width: 4.5vw;
+}
+.monstre18{
+    top: 40vh;
+    left: 8vw;
+    height: 7vh;
+    width: 4vw;
+}
+.monstre19{
+    top: 50vh;
+    left: 85vw;
+    height: 7vh;
+    width: 4vw;
+}
+.monstre20{
+    top: 8vh;
+    left: 30vw;
+    height: 10vh;
+    width: 5vw;
+}
+.monstre21{
+    top: 24vh;
+    left: 66vw;
+    height: 18vh;
+    width: 10vw;
+}
+.monstre22{
+    top: 34vh;
+    left: 40vw;
+    height: 7vh;
+    width: 4vw;
+}
+.monstre23{
+    top: 18vh;
+    left: 8vw;
+    height: 7vh;
+    width: 4vw;
+}
+.monstre24{
+    top: 17vh;
+    left: 94vw;
+    height: 7vh;
+    width: 4vw;
 }
 /**************************** piece*/
 .piece{
@@ -425,4 +546,18 @@ img{
     border-radius: 50px;
     width: 2vw;
     height: 4vh;
+}
+#tresor{
+    top: 57vh;
+    left: 94vw;
+    height: 8vh;
+    width: 4vw;
+}
+
+/******************* key*/
+#key3{
+    top: 8vh;
+    left: 94vw;
+    height: 4vh;
+    width: 3vw;
 }
