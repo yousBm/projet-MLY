@@ -865,6 +865,13 @@ function moveVertical() {
 
         case "map3":
             blue=document.getElementsByClassName("blue");
+             //============info=joueur==============================>
+             var player = document.getElementById("playerMap3");
+             var stylePlayer = window.getComputedStyle(player, null); // css du joueur
+             var pT = parseInt(stylePlayer.top); // joueur position X
+             var pL = parseInt(stylePlayer.left); // joueur position Y
+             var pW = parseInt(stylePlayer.width); // joueur largeur
+             var pH = parseInt(stylePlayer.height); // joueur hauteur
             break;
     }
 }
