@@ -12,7 +12,7 @@ USE `JEUMLY`;
 CREATE TABLE IF NOT EXISTS Personnages(
         idPersonnage          Int  Auto_increment  NOT NULL PRIMARY KEY ,
         nomPersonnage         Varchar (100) NOT NULL ,
-        descriptionPersonnage Varchar (100) NOT NULL ,
+        descriptionPersonnage Varchar (150) NOT NULL ,
         avatar                Varchar (100) NOT NULL
 )ENGINE=InnoDB;
 
