@@ -273,9 +273,9 @@ img{
 }
 .line53{
     top: 70vh;
-    left: 95vw;
-    width: 4vw;
-    height: 7.5vh;
+    left: 88vw;
+    width: 1.2vw;
+    height: 7vh;
 }
 .line54{
     top: 29vh;
@@ -324,19 +324,19 @@ img{
     position: absolute;
 }
 #mur41{
-    top: 1.5vh;
-    left: 1vw;
+    top: 1vh;
+    left: 2vw;
     width: 13vw;
     height: 4vh;
 }
 #mur42{
-    top: 1.5vh;
+    top: 1vh;
     left: 14vw;
     width: 10vw;
     height: 4vh;
 }
 #mur43{
-    top: 1.5vh;
+    top: 1vh;
     left: 22vw;
     width: 19vw;
     height: 4vh;
@@ -360,32 +360,32 @@ img{
     height: 3vh;
 }
 #mur47{
-    top: 49.5vh;
-    left: 1vw;
-    width: 18vw;
+    top: 49vh;
+    left: 2vw;
+    width: 17vw;
     height: 4vh;
 }
 #mur48{
-    top: 66.5vh;
+    top: 66vh;
     left: 83.3vw;
-    width: 16.4vw;
+    width: 15.8vw;
     height: 4vh;
 }
 #mur49{
-    top: 26.5vh;
-    left: 84vw;
+    top: 26vh;
+    left: 83.5vw;
     width: 15.2vw;
     height: 4vh;
 }
 #mur50{
-    top: 66.5vh;
+    top: 66vh;
     left: 38vw;
     width: 12.9vw;
     height: 4vh;
 }
 #mur51{
-    top: 66.5vh;
-    left: 50.9vw;
+    top: 66vh;
+    left: 50.6vw;
     width: 12.6vw;
     height: 4vh;
 }
@@ -432,19 +432,19 @@ img{
     height: 4vh;
 }
 #mur59{
-    top: 69.4vh;
-    left: 95vw;
-    width: 4vw;
-    height: 4vh;
+    top: 57vh;
+    left: 78vw;
+    width: 5vw;
+    height: 8vh;
 }
 #mur60{
-    top: 73.4vh;
-    left: 95vw;
-    width: 4vw;
+    top: 82vh;
+    left: 43vw;
+    width: 12.9vw;
     height: 4vh;
 }
 #mur61{
-    top: 1.5vh;
+    top: 1vh;
     left: 87vw;
     width: 12vw;
     height: 4vh;
@@ -488,7 +488,7 @@ img{
 }
 .monstre17{
     top: 77vh;
-    left: 55vw;
+    left: 65vw;
     height: 8vh;
     width: 4.5vw;
 }
@@ -511,10 +511,10 @@ img{
     width: 5vw;
 }
 .monstre21{
-    top: 24vh;
+    top: 33vh;
     left: 66vw;
-    height: 18vh;
-    width: 10vw;
+    height: 12vh;
+    width: 6vw;
 }
 .monstre22{
     top: 34vh;
@@ -524,7 +524,7 @@ img{
 }
 .monstre23{
     top: 18vh;
-    left: 8vw;
+    left: 10vw;
     height: 7vh;
     width: 4vw;
 }
@@ -544,6 +544,54 @@ img{
     color: coral;
     background-color: rgb(243, 243, 113);
     border-radius: 50px;
+    width: 2vw;
+    height: 4vh;
+}
+#piece9{
+    top: 56vh;
+    left: 3vw;
+    width: 2vw;
+    height: 4vh;
+}
+#piece10{
+    top: 18vh;
+    left: 88vw;
+    width: 2vw;
+    height: 4vh;
+}
+#piece11{
+    top: 12vh;
+    left: 22vw;
+    width: 2vw;
+    height: 4vh;
+}
+#piece12{
+    top: 72vh;
+    left: 47vw;
+    width: 2vw;
+    height: 4vh;
+}
+#piece13{
+    top: 43vh;
+    left: 39vw;
+    width: 2vw;
+    height: 4vh;
+}
+#piece14{
+    top: 7vh;
+    left: 39vw;
+    width: 2vw;
+    height: 4vh;
+}
+#piece15{
+    top: 75vh;
+    left: 92vw;
+    width: 2vw;
+    height: 4vh;
+}
+#piece16{
+    top: 25vh;
+    left: 65vw;
     width: 2vw;
     height: 4vh;
 }
