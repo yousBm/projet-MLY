@@ -277,6 +277,7 @@ function moveHorizontal() {
                     blue0.style.left = eL0 + 5 + "px";
                     player.style.left = pL - 10 + "px";
                     a = 0;
+                    moveHorizontal=true;
                 }
                 else {
                     a = 0;
@@ -291,6 +292,7 @@ function moveHorizontal() {
                     blue0.style.left = eL0 - 5 + "px";
                     player.style.left = pL + 10 + "px";
                     a = 1;
+                    moveHorizontal=true;
                 }
                 else  {
                     a = 1;
@@ -307,6 +309,7 @@ function moveHorizontal() {
                     blue2.style.left = eL2 + 5 + "px";
                     player.style.left = pL - 10 + "px";
                     b = 0;
+                    moveHorizontal=true;
                 }
                 else {
                     b = 0
@@ -321,6 +324,7 @@ function moveHorizontal() {
                     blue2.style.left = eL2 - 5 + "px";
                     player.style.left = pL + 10 + "px";
                     b = 1;
+                    moveHorizontal=true;
                 }
                 else  {
                     b = 1;
@@ -337,6 +341,7 @@ function moveHorizontal() {
                     blue3.style.left = eL3 + 5 + "px";
                     player.style.left = pL - 10 + "px";
                     c = 0;
+                    moveHorizontal=true;
                 }
                 else {
                     c = 0
@@ -351,6 +356,7 @@ function moveHorizontal() {
                     blue3.style.left = eL3 - 5 + "px";
                     player.style.left = pL + 10 + "px";
                     c = 1;
+                    moveHorizontal=true;
                 }
                 else  {
                     c = 1;
@@ -367,6 +373,7 @@ function moveHorizontal() {
                     blue5.style.left = eL5 + 5 + "px";
                     player.style.left = pL - 10 + "px";
                     d = 0;
+                    moveHorizontal=true;
                 }
                 else {
                     d = 0
@@ -381,6 +388,7 @@ function moveHorizontal() {
                     blue5.style.left = eL5 - 5 + "px";
                     player.style.left = pL + 10 + "px";
                     d = 1;
+                    moveHorizontal=true;
                 }
                 else  {
                     d = 1;
@@ -388,8 +396,156 @@ function moveHorizontal() {
             }
             break;
         case "map2":
+            //============info=joueur==============================>
+            var player = document.getElementById("playerMap2");
+            var stylePlayer = window.getComputedStyle(player, null); // css du joueur
+            var pT = parseInt(stylePlayer.top); // joueur position X
+            var pL = parseInt(stylePlayer.left); // joueur position Y
+            var pW = parseInt(stylePlayer.width); // joueur largeur
+            var pH = parseInt(stylePlayer.height); // joueur hauteur
+            // =============info=monstre=============================>
             blue = document.getElementsByClassName("blue");
-            break;
+            // =============info=monstre8============================>
+            blue1 = blue[1]
+            var styleBlue1 = window.getComputedStyle(blue1, null);
+            var eT1 = parseInt(styleBlue1.top); 
+            var eL1 = parseInt(styleBlue1.left);
+            var eW1 = parseInt(styleBlue1.width);
+            var eH1 = parseInt(styleBlue1.height); 
+            // =============info=monstre9============================>
+            blue2 = blue[2]
+            var styleBlue2 = window.getComputedStyle(blue2, null);
+            var eT2 = parseInt(styleBlue2.top); 
+            var eL2 = parseInt(styleBlue2.left);
+            var eW2 = parseInt(styleBlue2.width);
+            var eH2 = parseInt(styleBlue2.height); 
+            // =============info=monstre14============================>
+            blue7 = blue[7]
+            var styleBlue7 = window.getComputedStyle(blue7, null);
+            var eT7 = parseInt(styleBlue7.top); 
+            var eL7 = parseInt(styleBlue7.left);
+            var eW7 = parseInt(styleBlue7.width);
+            var eH7 = parseInt(styleBlue7.height); 
+            // =============info=line01===============================>
+            line01 = document.getElementsByClassName("line01")[0];
+            var stylemur01 = window.getComputedStyle(line01, null);
+            var m01L = parseInt(stylemur01.left);
+            var m01W = parseInt(stylemur01.width);  
+            // =============info=line23===============================>
+            line23 = document.getElementsByClassName("line23")[0];
+            var stylemur23 = window.getComputedStyle(line23, null);
+            var m23L = parseInt(stylemur23.left);
+            var m23W = parseInt(stylemur23.width);
+            // =============info=line03===============================>
+            line03 = document.getElementsByClassName("line03")[0];
+            var stylemur03 = window.getComputedStyle(line03, null);
+            var m03L = parseInt(stylemur03.left);
+            var m03W = parseInt(stylemur03.width);
+            // =============info=line23===============================>
+            line27 = document.getElementsByClassName("line27")[0];
+            var stylemur27 = window.getComputedStyle(line27, null);
+            var m27L = parseInt(stylemur27.left);
+            var m27W = parseInt(stylemur27.width);    
+            //===========================Monstre8====================>
+            var moveHorizontal = true;
+            moveHorizontal = moveHorizontal && collisionEnnemi(eT1, eL1, eW1, eH1, pT, pL, pW, pH);
+            if (a2 != 0) {
+                if (moveHorizontal===true && eL1 > parseInt(m01L + m01W)) {
+                    blue1.style.left = eL1 - 5 + "px";
+                }
+                else if (moveHorizontal===false)
+                {
+                    blue1.style.left = eL1 + 5 + "px";
+                    player.style.left = pL - 10 + "px";
+                    a2 = 0;
+                    moveHorizontal=true;
+                }
+                else {
+                    a2 = 0;
+                }
+            }
+            else if (a2 == 0) {
+                if (moveHorizontal===true && parseInt(eL1 + eW1) < m23L) {
+                    blue1.style.left = eL1 + 5 + "px";
+                }
+                else if (moveHorizontal===false)
+                {
+                    blue1.style.left = eL1 - 5 + "px";
+                    player.style.left = pL + 10 + "px";
+                    a2 = 1;
+                    moveHorizontal=true;
+                }
+                else  {
+                    a2 = 1;
+                }
+            }
+            //===========================Monstre9====================>
+                var moveHorizontal = true;
+                moveHorizontal = moveHorizontal && collisionEnnemi(eT2, eL2, eW2, eH2, pT, pL, pW, pH);
+                if (b2 != 0) {
+                    if (moveHorizontal===true && eL2 > parseInt(m23L + m23W)) {
+                        blue2.style.left = eL2 - 5 + "px";
+                    }
+                    else if (moveHorizontal===false)
+                    {
+                        blue2.style.left = eL2 + 5 + "px";
+                        player.style.left = pL - 10 + "px";
+                        b2 = 0;
+                        moveHorizontal=true;
+                    }
+                    else {
+                        b2 = 0;
+                    }
+                }
+                else if (b2 == 0) {
+                    if (moveHorizontal===true && parseInt(eL2 + eW2) < m03L) {
+                        blue2.style.left = eL2 + 5 + "px";
+                    }
+                    else if (moveHorizontal===false)
+                    {
+                        blue2.style.left = eL2 - 5 + "px";
+                        player.style.left = pL + 10 + "px";
+                        b2 = 1;
+                        moveHorizontal=true;
+                    }
+                    else  {
+                        b2 = 1;
+                    }
+                }
+                //===========================Monstre14===================>
+                var moveHorizontal = true;
+                moveHorizontal = moveHorizontal && collisionEnnemi(eT7, eL7, eW7, eH7, pT, pL, pW, pH);
+                if (c2 != 0) {
+                    if (moveHorizontal===true && eL7 > parseInt(m23L + m23W)) {
+                        blue7.style.left = eL7 - 5 + "px";
+                    }
+                    else if (moveHorizontal===false)
+                    {
+                        blue7.style.left = eL7 + 5 + "px";
+                        player.style.left = pL - 10 + "px";
+                        c2 = 0;
+                        moveHorizontal=true;
+                    }
+                    else {
+                        c2 = 0;
+                    }
+                }
+                else if (c2 == 0) {
+                    if (moveHorizontal===true && parseInt(eL7 + eW7) < m27L) {
+                        blue7.style.left = eL7 + 5 + "px";
+                    }
+                    else if (moveHorizontal===false)
+                    {
+                        blue7.style.left = eL7 - 5 + "px";
+                        player.style.left = pL + 10 + "px";
+                        c2 = 1;
+                        moveHorizontal=true;
+                    }
+                    else  {
+                        c2 = 1;
+                    }
+                }
+                break;
     }
 }
 
@@ -397,6 +553,9 @@ a = 1;
 b = 1;
 c = 1;
 d = 1;
+a2 = 1;
+b2 = 1;
+c2 = 1;
 setInterval(moveHorizontal, 30);
 //==================================================mouve Horizontal=====>
 function moveVertical() {
@@ -457,6 +616,7 @@ function moveVertical() {
                     blue1.style.top = eT1 - 5 + "px";
                     player.style.top = pT + 10 + "px";
                     e = 0;
+                    moveVertical=true;
                 }
                 else {
                     e = 0
@@ -471,13 +631,14 @@ function moveVertical() {
                     blue1.style.top = eT1 + 5 + "px";
                     player.style.top = pT - 10 + "px";
                     e = 1;
+                    moveVertical=true;
                 }
                 else  {
                     e = 1;
                 }
             }
-             //========================monstre5======================>
-             moveVertical = moveVertical && collisionEnnemi(eT4, eL4, eW4, eH4, pT, pL, pW, pH);
+            //========================monstre5======================>
+            moveVertical = moveVertical && collisionEnnemi(eT4, eL4, eW4, eH4, pT, pL, pW, pH);
             if (f != 0) {
                 if (moveVertical===true && parseInt(eT4+eH4) < m15T) {
                     blue4.style.top = eT4 + 5 + "px";
@@ -487,6 +648,7 @@ function moveVertical() {
                     blue4.style.top = eT4 - 5 + "px";
                     player.style.top = pT + 10 + "px";
                     f = 0;
+                    moveVertical=true;
                 }
                 else {
                     f = 0
@@ -501,6 +663,7 @@ function moveVertical() {
                     blue4.style.top = eT4 + 5 + "px";
                     player.style.top = pT - 10 + "px";
                     f = 1;
+                    moveVertical=true;
                 }
                 else  {
                     f = 1;
@@ -509,12 +672,120 @@ function moveVertical() {
             break;
         case "map2":
             blue = document.getElementsByClassName("blue");
+            //============info=joueur==============================>
+            var player = document.getElementById("playerMap2");
+            var stylePlayer = window.getComputedStyle(player, null); // css du joueur
+            var pT = parseInt(stylePlayer.top); // joueur position X
+            var pL = parseInt(stylePlayer.left); // joueur position Y
+            var pW = parseInt(stylePlayer.width); // joueur largeur
+            var pH = parseInt(stylePlayer.height); // joueur hauteur
+            // =============info=monstre10============================>
+            blue3 = blue[3]
+            var styleBlue3 = window.getComputedStyle(blue3, null);
+            var eT3 = parseInt(styleBlue3.top);
+            var eH3 = parseInt(styleBlue3.height);
+            var eL3 = parseInt(styleBlue3.left);
+            var eW3 = parseInt(styleBlue3.width);
+            // =============info=monstre11============================>
+            blue4 = blue[4]
+            var styleBlue4 = window.getComputedStyle(blue4, null);
+            var eT4 = parseInt(styleBlue4.top);
+            var eH4 = parseInt(styleBlue4.height);
+            var eL4 = parseInt(styleBlue4.left);
+            var eW4 = parseInt(styleBlue4.width);
+            //=============info=line04==============================>
+            line04 = document.getElementsByClassName("line04")[0];
+            var stylemur04 = window.getComputedStyle(line04, null);
+            var m04T = parseInt(stylemur04.top);
+            var m04H = parseInt(stylemur04.height);
+            //=============info=line22==============================>
+            line22 = document.getElementsByClassName("line22")[0];
+            var stylemur22 = window.getComputedStyle(line22, null);
+            var m22T = parseInt(stylemur22.top);
+            var m22H = parseInt(stylemur22.height); 
+            //=============info=line29==============================>
+            line29 = document.getElementsByClassName("line29")[0];
+            var stylemur29 = window.getComputedStyle(line29, null);
+            var m29T = parseInt(stylemur29.top);
+            var m29H = parseInt(stylemur29.height);            
+            //=============info=line30==============================>
+            line30 = document.getElementsByClassName("line30")[0];
+            var stylemur30 = window.getComputedStyle(line30, null);
+            var m30T = parseInt(stylemur30.top);
+            var m30H = parseInt(stylemur30.height);    
+            //========================monstre10=====================>
+            var moveVertical = true;
+            moveVertical = moveVertical && collisionEnnemi(eT3, eL3, eW3, eH3, pT, pL, pW, pH);
+            if (e2 != 0) {
+                if (moveVertical===true && parseInt(eT3+eH3) < m22T) {
+                    blue3.style.top = eT3 + 5 + "px";
+                }
+                else if (moveVertical===false)
+                {
+                    blue3.style.top = eT3 - 5 + "px";
+                    player.style.top = pT + 10 + "px";
+                    e2 = 0;
+                    moveVertical=true;
+                }
+                else {
+                    e2 = 0
+                }
+            }
+            else if (e2 == 0) {
+                if (moveVertical===true && eT3 > parseInt(m04T+m04H)) {
+                    blue3.style.top = eT3 - 5 + "px";
+                }
+                else if (moveVertical===false)
+                {
+                    blue3.style.top = eT3 + 5 + "px";
+                    player.style.top = pT - 10 + "px";
+                    e2 = 1;
+                    moveVertical=true;
+                }
+                else  {
+                    e2 = 1;
+                }
+            }             
+            moveVertical = moveVertical && collisionEnnemi(eT4, eL4, eW4, eH4, pT, pL, pW, pH);
+            if (f2 != 0) {
+                if (moveVertical===true && parseInt(eT4+eH4) < m30T) {
+                    blue4.style.top = eT4 + 5 + "px";
+                }
+                else if (moveVertical===false)
+                {
+                    blue4.style.top = eT4 - 5 + "px";
+                    player.style.top = pT + 10 + "px";
+                    f2 = 0;
+                    moveVertical=true;
+                }
+                else {
+                    f2 = 0
+                }
+            }
+            else if (f2 == 0) {
+                if (moveVertical===true && eT4 > parseInt(m29T+m29H)) {
+                    blue4.style.top = eT4 - 5 + "px";
+                }
+                else if (moveVertical===false)
+                {
+                    blue4.style.top = eT4 + 5 + "px";
+                    player.style.top = pT - 10 + "px";
+                    f2 = 1;
+                    moveVertical=true;
+                }
+                else  {
+                    f2 = 1;
+                }
+            } 
+                             
             break;
     }
 }
 
 e = 1;
 f = 1;
+e2 = 1;
+f2 = 1;
 setInterval(moveVertical, 50);
 //==================================================mouve Horizontal=====>
 function collisionEnnemi(eT, eL, eW, eH, pT, pL, pW, pH) {
