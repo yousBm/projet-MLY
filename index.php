@@ -50,7 +50,7 @@ if (isset($_GET['action'])) {
                 break;
             }
         case 'menuListe': {
-            afficherPage('PHP/view/', 'menuListe', "Menu du jeu");
+                afficherPage('PHP/view/', 'menuListe', "Menu du jeu");
                 break;
             }
         case 'scoreListe': {
@@ -58,15 +58,19 @@ if (isset($_GET['action'])) {
                 break;
             }
         case 'map1': {
-            afficherPageSansFooter('PHP/view/', 'map1', "map n°1");
+                afficherPageSansFooter('PHP/view/', 'map1', "map n°1");
+                break;
+            }
+        case 'map2': {
+                afficherPageSansFooter('PHP/view/', 'map2', "map n°2");
                 break;
             }
         case 'gameover': {
-            afficherPageSansFooter('PHP/view/', 'gameover', "");
+                afficherPageSansFooter('PHP/view/', 'gameover', "");
                 break;
             }
         case 'bravo': {
-            afficherPageSansFooter('PHP/view/', 'bravo', "");
+                afficherPageSansFooter('PHP/view/', 'bravo', "");
                 break;
             }
     }

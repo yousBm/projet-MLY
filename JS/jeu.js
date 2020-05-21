@@ -8,10 +8,10 @@ function move(pX, pY) {
     else if (body.id == "map2") {
         var player = document.getElementById("playerMap2"); // joueur
     }
-    else if (body.id== "map3")
-    {
-        var player = document.getElementById("playerMap3"); // joueur
-    }
+    // else (body.id=="map3")
+    // {
+    //     var player = document.getElementById("playerMap3"); // joueur
+    // }
     var stylePlayer = window.getComputedStyle(player, null); // css du joueur
     var pT = parseInt(stylePlayer.top); // joueur position X
     var pL = parseInt(stylePlayer.left); // joueur position Y
@@ -217,14 +217,14 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color, id) {
                 // si on touche l'arrivée
                 document.location.href="index.php?action=map3";
             break; 
-            case "porte3Ferme":
-                alert("il me faut une clé!");
-                // si on touche l'arrivée
-            break;    
-            case "porte3Ouverte":
-                // si on touche l'arrivée
-                document.location.href="index.php?action=map4";//pour l'instant non existant, sinn retour au menu
-            break; 
+            // case "porte3Ferme":
+            //     alert("il me faut une clé!");
+            //     // si on touche l'arrivée
+            // break;    
+            // case "porte3Ouverte":
+            //     // si on touche l'arrivée
+            //     document.location.href="index.php?action=menuListe";
+            // break; 
         }
         return false;
     }
@@ -918,10 +918,10 @@ if (body.id == "map1") {
 else if (body.id == "map2") {
     var player = document.getElementById("playerMap2"); // joueur
 }
-else if (body.id=="map3")
-{
-    var player = document.getElementById("playerMap3"); // joueur
-}
+// else (body.id=="map3")
+// {
+//     var player = document.getElementById("playerMap3"); // joueur
+// }
 nomPerso=document.getElementsByClassName("nomPerso")[0].innerHTML;
 switch (nomPerso)
 {
@@ -978,3 +978,22 @@ function eraseCookie(name) {
 }
 
 /************************************************************************** Enregistrer les points de vie, le temps et le nbres de pièces **************************************************************************/
+if (body.id=="map2") {
+var nbPiece= document.getElementById("nombrePiece").textContent;
+createCookie("nbPieces",nbPiece,5);
+}
+
+if (body.id=="map2") {
+    document.getElementById('nombrePiece').innerHTML = $_COOKIE['nbPieces'];
+}
+
+// if (readCookie("prenom") != null && readCookie("nom") != null) {
+//     alert("bonjour M/Mme "+readCookie("nom")+" "+readCookie("prenom"))
+//     eraseCookie("prenom");
+//     eraseCookie("nom");
+// } else {
+//     var prenom = prompt("quel est votre prénom :");
+//     createCookie("prenom",prenom,5);
+//     var nom = prompt("quel est votre nom :");
+//     createCookie("nom",nom,5);
+// }
