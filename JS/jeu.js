@@ -248,7 +248,7 @@ else if (body.id=="map2")
 nomPerso=document.getElementsByClassName("nomPerso")[0].innerHTML;
 switch (nomPerso)
 {
-    case "joe l'édenté":
+    case "Joe l'édenté":
         player.setAttribute("class","persoChercheurDor")
         break;
     case "Prince Moustache":
@@ -301,16 +301,3 @@ function eraseCookie(name) {
 }
 
 /************************************************************************** Enregistrer les points de vie, le temps et le nbres de pièces **************************************************************************/
-
-
-
-// if (readCookie("prenom") != null && readCookie("nom") != null) {
-//     alert("bonjour M/Mme "+readCookie("nom")+" "+readCookie("prenom"))
-//     eraseCookie("prenom");
-//     eraseCookie("nom");
-// } else {
-//     var prenom = prompt("quel est votre prénom :");
-//     createCookie("prenom",prenom,5);
-//     var nom = prompt("quel est votre nom :");
-//     createCookie("nom",nom,5);
-// }

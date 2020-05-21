@@ -1,5 +1,6 @@
 <?php $nomDuPerso = $_POST["choixPerso"];
 $perso=PersonnageManager::getList();
+$choixNiv = $_POST["choixNiveau"];
 ?>
 <body id="map1">
     <div class="contenu">
@@ -97,11 +98,32 @@ $perso=PersonnageManager::getList();
                     echo $perso[3]->getNomPersonnage(); 
                 }
            ?></div>
-            <div class="vie">
+            <div class="vie"> <?php 
+            if ($choixNiv == "Niveau1"){
+                ?>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+            <?php } else if ($choixNiv == "Niveau2"){
+                ?>
                 <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
                 <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
                 <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
                 <div class="invisibleVie viePerso"><img src="" alt=""></div>
+            <?php } else if ($choixNiv == "Niveau3"){
+                ?> 
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="invisibleVie viePerso"><img src="" alt=""></div>   
+                <div class="invisibleVie viePerso"><img src="" alt=""></div> 
+            <?php } else {
+                ?>  
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="invisibleVie viePerso"><img src="" alt=""></div> 
+                <div class="invisibleVie viePerso"><img src="" alt=""></div>   
+                <div class="invisibleVie viePerso"><img src="" alt=""></div>   
+            <?php }  ?>
             </div>
             <div class="menuOr">
                 <div class="pieceMenu">

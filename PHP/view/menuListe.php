@@ -8,17 +8,18 @@ $perso = PersonnageManager::getList();
     <div class="menu">
         <div class="menuderoulant">
             <select name="choixNiveau" id="choixNiveau" class="menuchoix">
-            <option value="niveau">Choix du niveau</option>
+            <option value="niveauChoisir">Choix du niveau de difficulté</option>
                 <?php
+                $i=1;
                 foreach ($niveau as $elt) {
-                ?>
-                    <option value="Niveau 1"><?php echo $elt->getNomNiveau() ?></option>
-                <?php } ?>
+                    echo "<option value='Niveau$i'>".$elt->getNomNiveau()."</option>";
+                $i++;    
+                } ?>
             </select>
         </div>
         <div class="menuderoulant">
             <select name="choixPerso" id="choixPerso" class="menuchoix">
-                <option value="perso">Choix du personnage</option>
+                <option value="persoChoisir">Choix du personnage</option>
                 <?php
                 $i=1;
                 foreach ($perso as $elt) {
@@ -35,9 +36,9 @@ $perso = PersonnageManager::getList();
             </div>
         </div>
         <div class="btn3">
-            <a href="index.php?action=connect" class="btn">Déconnexion</a>
-            <input type="submit" class="btn" value="Nouvelle partie">
-            <a href="index.php?action=scoreListe" class="btn">Voir scores</a>
+            <div class="btn"><a class="btn1" href="index.php?action=connect">Déconnexion</a></div>
+            <input type="submit" class="btn2" value="Nouvelle partie">
+            <div class="btn"><a class="btn1" href="index.php?action=scoreListe">Voir scores</a></div>
         </div>
     </div>
 </form>
