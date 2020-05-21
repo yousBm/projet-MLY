@@ -8,6 +8,10 @@ function move(pX, pY) {
     else if (body.id == "map2") {
         var player = document.getElementById("playerMap2"); // joueur
     }
+    else (body.id=="map3")
+    {
+        var player = document.getElementById("playerMap3"); // joueur
+    }
     var stylePlayer = window.getComputedStyle(player, null); // css du joueur
     var pT = parseInt(stylePlayer.top); // joueur position X
     var pL = parseInt(stylePlayer.left); // joueur position Y
@@ -104,12 +108,75 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color, id) {
                 document.getElementById("nombrePiece").innerHTML = nombrePiece;
                 break;
             case "piece8":
-                piece8 = document.getElementById("piece8");
-                piece8.setAttribute("class", "invisible");
-                nombrePiece = document.getElementById("nombrePiece").innerHTML;
-                nombrePiece = parseInt(nombrePiece) + 1;
-                document.getElementById("nombrePiece").innerHTML = nombrePiece;
-                break;
+                piece8=document.getElementById("piece8");
+                piece8.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece9":
+                piece9=document.getElementById("piece9");
+                piece9.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece10":
+                piece10=document.getElementById("piece10");
+                piece10.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece11":
+                piece11=document.getElementById("piece11");
+                piece11.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece12":
+                piece12=document.getElementById("piece12");
+                piece12.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece13":
+                piece13=document.getElementById("piece13");
+                piece13.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece14":
+                piece14=document.getElementById("piece14");
+                piece14.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece15":
+                piece15=document.getElementById("piece15");
+                piece15.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "piece16":
+                piece16=document.getElementById("piece16");
+                piece16.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+1;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
+            case "tresor":
+                tresor=document.getElementById("tresor");
+                tresor.setAttribute("class","invisible");
+                nombrePiece=document.getElementById("nombrePiece").innerHTML;
+                nombrePiece=parseInt(nombrePiece)+10;
+                document.getElementById("nombrePiece").innerHTML=nombrePiece;
+            break;
             case "key1":
                 key1 = document.getElementById("key1");
                 key1.setAttribute("class", "invisible");
@@ -119,13 +186,21 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color, id) {
                 porte1.setAttribute("id", "porte1Ouverte");
                 break;
             case "key2":
-                key2 = document.getElementById("key2");
-                key2.setAttribute("class", "invisible");
-                keyMenu = document.getElementById("keyMenu");
-                keyMenu.innerHTML = "<img class='keyDansMenu' src='Images/decor/key.png' alt=''>";
-                porte2 = document.getElementById("porte2Ferme");
-                porte2.setAttribute("id", "porte2Ouverte");
-                break;
+                key2=document.getElementById("key2");
+                key2.setAttribute("class","invisible");
+                keyMenu=document.getElementById("keyMenu");
+                keyMenu.innerHTML="<img class='keyDansMenu' src='Images/decor/key.png' alt=''>";
+                porte2=document.getElementById("porte2Ferme");
+                porte2.setAttribute("id","porte2Ouverte");
+            break;
+            case "key3":
+                key3=document.getElementById("key3");
+                key3.setAttribute("class","invisible");
+                keyMenu=document.getElementById("keyMenu");
+                keyMenu.innerHTML="<img class='keyDansMenu' src='Images/decor/key.png' alt=''>";
+                porte3=document.getElementById("porte3Ferme");
+                porte3.setAttribute("id","porte3Ouverte");
+            break;
             case "porte1Ferme":
                 alert("il me faut une clé!");
                 // si on touche l'arrivée
@@ -140,8 +215,16 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color, id) {
                 break;
             case "porte2Ouverte":
                 // si on touche l'arrivée
-                document.location.href = "index.php?action=map3";
-                break;
+                document.location.href="index.php?action=map3";
+            break; 
+            case "porte3Ferme":
+                alert("il me faut une clé!");
+                // si on touche l'arrivée
+            break;    
+            case "porte3Ouverte":
+                // si on touche l'arrivée
+                document.location.href="index.php?action=map4";//pour l'instant non existant, sinn retour au menu
+            break; 
         }
         return false;
     }
@@ -149,7 +232,7 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color, id) {
 }
 //===================================================================deplacement=====>
 document.addEventListener('keydown', function (event) {
-    var speed = 5; // vitesse de déplacement
+    var speed = 8; // vitesse de déplacement
     var event = event || window.event, // pour la compatibilite avec tous les navigateurs
         keyCode = event.keyCode;
     switch (keyCode) {
@@ -779,6 +862,10 @@ function moveVertical() {
             } 
                              
             break;
+
+        case "map3":
+            blue=document.getElementsByClassName("blue");
+            break;
     }
 }
 
@@ -824,10 +911,15 @@ if (body.id == "map1") {
 else if (body.id == "map2") {
     var player = document.getElementById("playerMap2"); // joueur
 }
-nomPerso = document.getElementsByClassName("nomPerso")[0].innerHTML;
-switch (nomPerso) {
+else (body.id=="map3")
+{
+    var player = document.getElementById("playerMap3"); // joueur
+}
+nomPerso=document.getElementsByClassName("nomPerso")[0].innerHTML;
+switch (nomPerso)
+{
     case "joe l'édenté":
-        player.setAttribute("class", "persoChercheurDor")
+        player.setAttribute("class","persoChercheurDor")
         break;
     case "prince moustache":
         player.setAttribute("class", "persoPrinceMoustache")

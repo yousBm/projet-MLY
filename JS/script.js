@@ -17,11 +17,11 @@ oeil[i].addEventListener("click",showPassword);
 }
 
 function showPassword(e){
-  console.log(e);
+  console.log();
     if (document.getElementById(e.id).type=='text'){
         document.getElementById(e.id).type='password';
     }
     else{
-        document.getElementById(div).type='text';
+        document.getElementById(e.id).type='text';
     }  
 }
