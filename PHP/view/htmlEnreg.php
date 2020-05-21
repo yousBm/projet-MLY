@@ -30,7 +30,6 @@
             <div class="contenu">
                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                 <input class="input-co" type="password" name="confirm-mdp" id="confirm-mdp" maxlength="30" placeholder="Confirmer le Mot de Passe" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{5,15})" required>
-                <i class="fa fa-eye" aria-hidden="true"></i>
             </div>
         </div>
 

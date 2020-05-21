@@ -309,7 +309,10 @@ footer {
     align-items: center;
     text-align: center;
 }
-
+.milieu{
+    display: flex;
+    justify-content: center;
+}
 /************* Map1   ***************/
 /* html,
 body {
