@@ -8,7 +8,7 @@ function move(pX, pY) {
     else if (body.id == "map2") {
         var player = document.getElementById("playerMap2"); // joueur
     }
-    else if (body.id=="map3")
+    else if (body.id== "map3")
     {
         var player = document.getElementById("playerMap3"); // joueur
     }
@@ -232,7 +232,7 @@ function collision(oT, oL, oW, oH, pT, pL, pW, pH, color, id) {
 }
 //===================================================================deplacement=====>
 document.addEventListener('keydown', function (event) {
-    var speed = 8; // vitesse de déplacement
+    var speed = 10; // vitesse de déplacement
     var event = event || window.event, // pour la compatibilite avec tous les navigateurs
         keyCode = event.keyCode;
     switch (keyCode) {
