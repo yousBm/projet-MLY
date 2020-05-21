@@ -8,7 +8,7 @@ function move(pX, pY) {
     else if (body.id == "map2") {
         var player = document.getElementById("playerMap2"); // joueur
     }
-    else (body.id=="map3")
+    else if (body.id=="map3")
     {
         var player = document.getElementById("playerMap3"); // joueur
     }
@@ -911,7 +911,7 @@ if (body.id == "map1") {
 else if (body.id == "map2") {
     var player = document.getElementById("playerMap2"); // joueur
 }
-else (body.id=="map3")
+else if (body.id=="map3")
 {
     var player = document.getElementById("playerMap3"); // joueur
 }
