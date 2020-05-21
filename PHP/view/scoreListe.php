@@ -7,8 +7,8 @@ echo'
     <div class="entete row fond ecritureBlanche">
         <div class="titreEntete case">Rang</div>
         <div class="titreEntete case">Pseudo</div>
-        <div class="titreEntete case">Nombre de piece</div>
-        <div class="titreEntete case">Temps ecoulé</div>
+        <div class="titreEntete case">Nombre de pièce</div>
+        <div class="titreEntete case">Temps écoulé</div>
         <div class="titreEntete case">Score</div>
     </div>'; 
     $i=1;
@@ -25,7 +25,7 @@ echo'
     }
     echo '
 <div class="bouton center">
-<a href="index.php?action=menuListe"><div class="boutonRetour center margeBoutonTop ecritureBlanche">Retour</div></a>
+<a class ="btn-a" href="index.php?action=menuListe"><div class="boutonRetour center margeBoutonTop ecritureBlanche">Retour</div></a>
 </div>
 </div>';
 ?>

@@ -159,7 +159,7 @@ body {
 
 .connect-form {
     background-color: ivory;
-    width: 40vw;
+    width: 43vw;
     margin: 10vh 30vw;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.514);
@@ -233,31 +233,32 @@ i {
 #message {
     display: none;
     position:absolute;
-    right: -220px;
-    top:-8px;
+    right: -165px;
+    top:-5px;
     color: red;
     text-align: justify;
+    line-height: 2px;
+    font-family: 'Roboto',sans-serif;
+   font-size: 0.9em;
    }
-   
-/* Add a green text color and a checkmark when the requirements are right */
+
 .valid {
-    color: green;
+    color:#5cbc63;
   }
   
   .valid:before {
     position: relative;
-    left: -10px;
+    left: -8px;
     content: "✔";
   }
   
-  /* Add a red text color and an "x" when the requirements are wrong */
   .invalid {
     color: red;
   }
   
   .invalid:before {
     position: relative;
-    left: -10px;
+    left: -8px;
     content: "✖";
   }
 
@@ -308,7 +309,10 @@ footer {
     align-items: center;
     text-align: center;
 }
-
+.milieu{
+    display: flex;
+    justify-content: center;
+}
 /************* Map1   ***************/
 /* html,
 body {
@@ -374,6 +378,7 @@ body {
 
 .ecritureBlanche {
     color: white;
+    word-spacing: 8px;
 }
 
 /********************************************contenu page*/
@@ -398,6 +403,10 @@ body {
     box-shadow: 2px 2px 2px black;
     color: white;
     border-radius: 10px 0 10px 0;
+    margin: 2vh 0 2vh 0;
+}
+.btn-a{
+    text-decoration: none;
 }
 
 .boutonRetour:hover {

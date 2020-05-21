@@ -19,8 +19,8 @@
                         <p id="lettre" class="invalid"><b>une miniscule</b></p>
                         <p id="capital" class="invalid"><b>une Majuscule</b></p>
                         <p id="chiffre" class="invalid"><b>un chiffre</b></p>
-                        <p id="longueur" class="invalid"><b>5 caractère minimum</b></p>
-                        <p id="special" class="invalid"><b>un caractère spécial (-+!*$@%_)</b></p>
+                        <p id="longueur" class="invalid"><b>5 caractères minimum</b></p>
+                        <p id="special" class="invalid"><b>caract. spécial (-+!*$@%_)</b></p>
                     </div>
                 </div>
             </div>
@@ -29,8 +29,7 @@
 
             <div class="contenu">
                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-                <input class="input-co" type="password" name="confirm-mdp" id="confirm-mdp" maxlength="30" placeholder="Confirmer le Mot de Passe" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,15})" required>
-                <i class="fa fa-eye" aria-hidden="true"></i>
+                <input class="input-co" type="password" name="confirm-mdp" id="confirm-mdp" maxlength="30" placeholder="Confirmer le Mot de Passe" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{5,15})" required>
             </div>
         </div>
 

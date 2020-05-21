@@ -16,12 +16,14 @@ for(i=0;i<oeil.length;i++){
 oeil[i].addEventListener("click",showPassword);
 }
 
-function showPassword(e){
+function showPassword(){
   console.log();
-    if (document.getElementById(e.id).type=='text'){
-        document.getElementById(e.id).type='password';
+    if (document.getElementById("motDePasse").type=='text'){
+        document.getElementById("motDePasse").type='password';
     }
     else{
-        document.getElementById(e.id).type='text';
+        document.getElementById("motDePasse").type='text';
     }  
 }
+
+

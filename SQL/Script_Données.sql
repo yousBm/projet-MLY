@@ -37,10 +37,10 @@ INSERT INTO `niveaux` (`idNiveau`, `nomNiveau`, `pointDeVie`) VALUES
 --
 
 INSERT INTO `personnages` (`idPersonnage`, `nomPersonnage`, `descriptionPersonnage`, `avatar`) VALUES
-(1, 'joe l\'édenté', 'Chercheur d or dont sa seule préoccupation et de s enrichir !', 'Images/perso1.png'),
-(2, 'prince moustache', 'Fort, courageux, ambitieux. Et avec une belle Moustache !', 'Images/perso2.png'),
-(3, 'totor le rouquin', 'Bah il est roux, c est pourtant évident !', 'Images/perso3.png'),
-(4, 'jack le zombie', 'Il a gardé sa conscience et il est a la recherche d un moyen de redevenir humain. Bonne chance Jack !', 'Images/perso4.png');
+(1, 'Joe l\'édenté', 'Chercheur d or dont sa seule préoccupation est de s enrichir !', 'Images/perso1.png'),
+(2, 'Prince Moustache', 'Fort, courageux, ambitieux. Et avec une belle Moustache !', 'Images/perso2.png'),
+(3, 'Totor, le rouquin', 'Bah il est roux, c est pourtant évident !', 'Images/perso3.png'),
+(4, 'Jack le Zombie', 'Il a gardé sa conscience et il est a la recherche d un moyen pour redevenir humain. Bonne chance Jack !', 'Images/perso4.png');
 
 --
 -- Déchargement des données de la table `scores`

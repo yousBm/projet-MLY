@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="utf-8" />
-    <title>terrain 3</title>
-    <link rel="stylesheet" href="../../CSS/map3.css">
-</head>
+<?php $nomDuPerso = $_POST["choixPerso"];
+$perso=PersonnageManager::getList();
+$choixNiv = $_POST["choixNiveau"];
+?>
 
 <body id="map3">
 
@@ -125,28 +121,53 @@
     <div id="key3" class="obstacle key"><img src="../../Images/decor/key.png" alt=""></div>
     <div id="" class="obstacle porte1"><img src="" alt="" srcset=""></div>
     <div class="menuJeu">
-        <div class="nomPerso">nom personnage</div>
-        <div class="vie">
-            <div class="coeur viePerso"><img src="../../Images/decor/coeur.png" alt=""></div>
-            <div class="coeur viePerso"><img src="../../Images/decor/coeur.png" alt=""></div>
-            <div class="coeur viePerso"><img src="../../Images/decor/coeur.png" alt=""></div>
-            <div class="viePerso"><img src="" alt=""></div>
-            <div class="viePerso"><img src="" alt=""></div>
-            <div class="viePerso"><img src="" alt=""></div>
-        </div>
-        <div class="menuOr">
-            <div class="pieceMenu">
-                <div class="piece"><img src="../../Images/decor/coin.png" alt=""></div>
+    <div class="nomPerso"><?php
+                if($nomDuPerso == "perso1") {
+                    echo $perso[0]->getNomPersonnage();
+                } else if ($nomDuPerso == "perso2") {
+                    echo $perso[1]->getNomPersonnage();
+                } else if ($nomDuPerso == "perso3") {
+                    echo $perso[2]->getNomPersonnage(); 
+                } else {
+                    echo $perso[3]->getNomPersonnage(); 
+                }
+           ?></div>
+           <div class="vie"> <?php 
+            if ($choixNiv == "Niveau1"){
+                ?>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+            <?php } else if ($choixNiv == "Niveau2"){
+                ?>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="invisibleVie viePerso"><img src="" alt=""></div>
+            <?php } else if ($choixNiv == "Niveau3"){
+                ?> 
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="invisibleVie viePerso"><img src="" alt=""></div>   
+                <div class="invisibleVie viePerso"><img src="" alt=""></div> 
+            <?php } else {
+                ?>  
+                <div class="coeur viePerso"><img src="Images/decor/coeur.png" alt=""></div>
+                <div class="invisibleVie viePerso"><img src="" alt=""></div> 
+                <div class="invisibleVie viePerso"><img src="" alt=""></div>   
+                <div class="invisibleVie viePerso"><img src="" alt=""></div>   
+            <?php }  ?>
             </div>
-            <div id="nombrePiece" class="nombrePiece">0</div>
+            <div class="menuOr">
+                <div class="pieceMenu">
+                    <div class="piece"><img src="Images/decor/coin.png" alt=""></div>
+                </div>
+                <div id="nombrePiece" class="nombrePiece">0</div>
+            </div>
+            <div class="keyMenu" id="keyMenu"></div>
+            <div class="time" id="time">0</div>
         </div>
-        <div class="keyMenu" id="keyMenu"></div>
-        <div class="time">00:00</div>
     </div>
-    </div>
-    <script src="../../JS/jeu.js"></script>
-    <footer>
-    </footer>
-</body>
-
-</html>
+    <script src="JS/jeu.js"></script>
+    </body>
